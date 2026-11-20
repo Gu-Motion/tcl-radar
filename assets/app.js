@@ -1,0 +1,196 @@
+/* Radar doi thu — renderer song ngu (vi / zh)
+   Du lieu: data/index.json -> danh sach tuan; data/<tuan>.json -> noi dung tuan.
+   Them nguon moi (vi du facebook): chi can them item co "source":"facebook"
+   vao brands[].items va khai bao trong SOURCES ben duoi. Khong phai sua gi khac. */
+
+const SOURCES = {
+  youtube:  { vi: 'YouTube',  zh: 'YouTube' },
+  facebook: { vi: 'Facebook', zh: 'Facebook' }
+};
+
+const T = {
+  vi: {
+    title: 'Radar đối thủ',
+    notes: 'Nhận định tuần này', compare: 'So sánh nhanh',
+    latest: 'Nội dung mới nhất từng hãng', all: 'Tất cả',
+    th_brand: 'Thương hiệu', th_7: '7 ngày', th_30: '30 ngày',
+    th_fresh: 'Ngày từ bài mới', th_median: 'Trung vị', th_max: 'Cao nhất',
+    th_paid: 'Dấu hiệu đẩy media',
+    yes: 'có', no: 'không thấy',
+    s7: 'bài trong 7 ngày', s30: 'bài trong 30 ngày',
+    sfresh: 'ngày từ bài mới nhất', smed: 'lượt xem trung vị',
+    boost: 'có đẩy media', views: 'lượt xem', empty: 'Không có nội dung ở nguồn này.',
+    sub: w => `Tuần ${w} · Samsung, Toshiba, LG, AQUA, Hisense`,
+    ago: d => d === 0 ? 'hôm nay' : d === 1 ? 'hôm qua' :
+          d < 7 ? `${d} ngày trước` : d < 30 ? `${Math.round(d / 7)} tuần trước` :
+          d < 365 ? `${Math.round(d / 30)} tháng trước` : `${Math.round(d / 365)} năm trước`,
+    f1: '<b>Cách đọc:</b> "Dấu hiệu đẩy media" bật khi một video có lượt xem cao gấp từ 10 lần trở lên so với mức trung vị của chính kênh đó. Lượt xem tự nhiên hiếm khi chênh tới mức này, nên đó là chỉ báo gián tiếp cho việc có ngân sách quảng cáo phía sau. Đây là suy luận, không phải số liệu chi tiêu thật.',
+    f2: '<b>Giới hạn:</b> Số liệu là con số tại thời điểm lấy dữ liệu. Không bao gồm quảng cáo chỉ chạy trong luồng tin mà không đăng lên kênh.',
+    f3: '<b>Cập nhật:</b> tự động vào 9:15 sáng thứ Hai hằng tuần.'
+  },
+  zh: {
+    title: '竞品雷达',
+    notes: '本周观察', compare: '快速对比',
+    latest: '各品牌最新内容', all: '全部',
+    th_brand: '品牌', th_7: '7 天', th_30: '30 天',
+    th_fresh: '距最新内容', th_median: '中位播放', th_max: '最高播放',
+    th_paid: '媒体投放迹象',
+    yes: '有', no: '未发现',
+    s7: '条 / 7 天', s30: '条 / 30 天',
+    sfresh: '天前最新一条', smed: '播放中位数',
+    boost: '疑似投放', views: '次播放', empty: '该来源暂无内容。',
+    sub: w => `${w} 当周 · 三星、东芝、LG、AQUA、海信`,
+    ago: d => d === 0 ? '今天' : d === 1 ? '昨天' :
+          d < 7 ? `${d} 天前` : d < 30 ? `${Math.round(d / 7)} 周前` :
+          d < 365 ? `${Math.round(d / 30)} 个月前` : `${Math.round(d / 365)} 年前`,
+    f1: '<b>读法：</b>当某条视频的播放量达到该频道中位数的 10 倍或以上时，标记为「媒体投放迹象」。自然播放极少出现这种差距，因此可作为背后存在广告预算的间接信号。这是推断，并非真实投放数据。',
+    f2: '<b>局限：</b>数据为抓取时点的数值，不包含仅在信息流中投放、未发布到频道的广告。',
+    f3: '<b>更新：</b>每周一上午 9:15 自动更新。'
+  }
+};
+
+const COLOR = { Samsung:'#2f6fe4', Toshiba:'#e4392f', LG:'#b4365c',
+                AQUA:'#1aa6b7', Hisense:'#3c9e4a', TCL:'#f0a020' };
+
+let lang = 'vi', src = 'all', week = null, DATA = null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+
+const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1).replace('.0','') + 'M'
+               : n >= 1e3 ? Math.round(n / 1e3) + 'K' : String(n);
+const median = a => { if (!a.length) return 0;
+  const s = [...a].sort((x, y) => x - y), m = s.length >> 1;
+  return s.length % 2 ? s[m] : Math.round((s[m - 1] + s[m]) / 2); };
+
+function titleOf(it) { return (lang === 'zh' && it.title_zh) ? it.title_zh : it.title; }
+function thumbOf(it) {
+  if (it.image) return it.image;
+  if (it.source === 'youtube') return `https://i.ytimg.com/vi/${it.id}/hqdefault.jpg`;
+  return null;
+}
+function linkOf(it) {
+  if (it.url) return it.url;
+  if (it.source === 'youtube') return `https://youtu.be/${it.id}`;
+  return '#';
+}
+
+function statsOf(items) {
+  const vals = items.map(i => i.views || 0);
+  const med = median(vals);
+  const paid = new Set(items.filter(i => med && (i.views || 0) >= Math.max(10 * med, 10000))
+                            .map(i => i.id));
+  return {
+    n7: items.filter(i => i.days <= 7).length,
+    n30: items.filter(i => i.days <= 30).length,
+    fresh: items.length ? Math.min(...items.map(i => i.days)) : null,
+    med, max: vals.length ? Math.max(...vals) : 0, paid
+  };
+}
+
+function visible(b) {
+  return src === 'all' ? b.items : b.items.filter(i => i.source === src);
+}
+
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'vi';
+  document.body.dataset.lang = lang;
+  document.querySelectorAll('[data-t]').forEach(el => { el.textContent = t[el.dataset.t]; });
+  $('#sub').textContent = t.sub(week);
+  ['f1','f2','f3'].forEach(k => { $('#' + k).innerHTML = t[k]; });
+
+  // nguon
+  const present = new Set(DATA.brands.flatMap(b => b.items.map(i => i.source)));
+  $('#srcSeg').innerHTML =
+    [['all', t.all]].concat(Object.keys(SOURCES).map(k => [k, SOURCES[k][lang]]))
+      .map(([k, label]) => {
+        const off = k !== 'all' && !present.has(k);
+        return `<button data-src="${k}"${off ? ' disabled' : ''}` +
+               `${k === src ? ' class="on"' : ''}>${esc(label)}</button>`;
+      }).join('');
+
+  // nhan dinh
+  $('#notes').innerHTML = (DATA.notes || []).map(n =>
+    `<div class="note"><h3>${esc(n.title[lang] || n.title.vi)}</h3>
+     <p>${esc(n.body[lang] || n.body.vi)}</p></div>`).join('');
+
+  // bang so sanh
+  const rows = DATA.brands.map(b => ({ b, items: visible(b), st: statsOf(visible(b)) }))
+    .sort((x, y) => y.st.n30 - x.st.n30 || (x.st.fresh ?? 999) - (y.st.fresh ?? 999));
+  $('#tbl tbody').innerHTML = rows.map(({ b, st }) => `<tr>
+    <td><span class="dot" style="--c:${COLOR[b.brand] || '#888'}"></span>${esc(b.brand)}</td>
+    <td class="num">${st.n7}</td><td class="num">${st.n30}</td>
+    <td class="num">${st.fresh ?? '—'}</td><td class="num">${fmt(st.med)}</td>
+    <td class="num">${fmt(st.max)}</td>
+    <td>${st.paid.size ? `<span class="tag">${t.yes}</span>`
+                       : `<span class="tag off">${t.no}</span>`}</td></tr>`).join('');
+
+  // khoi tung hang
+  $('#brands').innerHTML = rows.map(({ b, items, st }) => {
+    const c = COLOR[b.brand] || '#888';
+    const ch = b.channels[src === 'all' ? 'youtube' : src] || b.channels.youtube || {};
+    const chName = (lang === 'zh' && ch.name_zh) ? ch.name_zh : (ch.name || '');
+    const tiles = items.slice().sort((x, y) => x.days - y.days).slice(0, 6).map(it => {
+      const th = thumbOf(it);
+      return `<a class="v" href="${esc(linkOf(it))}" target="_blank" rel="noopener">
+        <div class="thumb${th ? '' : ' noimg'}" style="--c:${c}">
+          ${th ? `<img loading="lazy" src="${esc(th)}" alt=""
+               onerror="this.closest('.thumb').classList.add('noimg')">` : ''}
+          <span class="play">▶</span>
+          ${it.len ? `<span class="len">${esc(it.len)}</span>` : ''}
+          ${src === 'all' ? `<span class="badge">${esc(SOURCES[it.source]?.[lang] || it.source)}</span>` : ''}
+          ${st.paid.has(it.id) ? `<span class="boost">${t.boost}</span>` : ''}
+        </div>
+        <div class="vt">${esc(titleOf(it))}</div>
+        <div class="vm">${t.ago(it.days)} · ${fmt(it.views || 0)} ${t.views}</div></a>`;
+    }).join('');
+    return `<section class="brand" style="--c:${c}">
+      <header><h2><span class="dot" style="--c:${c}"></span>${esc(b.brand)}</h2>
+      ${ch.url ? `<a class="src" href="${esc(ch.url)}" target="_blank" rel="noopener">${esc(chName)} ↗</a>` : ''}</header>
+      <div class="stats">
+        <div><b>${st.n7}</b><span>${t.s7}</span></div>
+        <div><b>${st.n30}</b><span>${t.s30}</span></div>
+        <div><b>${st.fresh ?? '—'}</b><span>${t.sfresh}</span></div>
+        <div><b>${fmt(st.med)}</b><span>${t.smed}</span></div>
+      </div>
+      ${items.length ? `<div class="grid">${tiles}</div>`
+                     : `<div class="empty">${t.empty}</div>`}</section>`;
+  }).join('');
+}
+
+async function loadWeek(w) {
+  DATA = await (await fetch(`data/${w}.json`)).json();
+  week = w;
+  render();
+}
+
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('radar_lang', l); } catch (e) {}
+  document.querySelectorAll('#langSeg button')
+    .forEach(b => b.classList.toggle('on', b.dataset.lang === l));
+  if (DATA) render();
+}
+
+(async function init() {
+  try { const s = localStorage.getItem('radar_lang'); if (s === 'vi' || s === 'zh') lang = s; }
+  catch (e) {}
+  if (location.hash === '#zh') lang = 'zh';
+
+  document.querySelectorAll('#langSeg button')
+    .forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  $('#srcSeg').addEventListener('click', ev => {
+    const b = ev.target.closest('button[data-src]');
+    if (!b || b.disabled) return;
+    src = b.dataset.src; render();
+  });
+  $('#weekSel').addEventListener('change', ev => loadWeek(ev.target.value));
+
+  setLang(lang);
+  const idx = await (await fetch('data/index.json')).json();
+  const weeks = idx.weeks.slice().sort().reverse();
+  $('#weekSel').innerHTML = weeks.map(w => `<option value="${w}">${w}</option>`).join('');
+  $('#weekSel').style.display = weeks.length > 1 ? '' : 'none';
+  await loadWeek(weeks[0]);
+})();

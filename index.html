@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Radar đối thủ · Competitor Radar</title>
+<meta name="description" content="Theo dõi nội dung đối thủ hằng tuần — Samsung, Toshiba, LG, AQUA, Hisense">
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="titles">
+      <h1 data-t="title"></h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="controls">
+      <div class="seg" id="langSeg" role="group" aria-label="Language">
+        <button data-lang="vi" class="on">Tiếng Việt</button>
+        <button data-lang="zh">中文</button>
+      </div>
+      <select id="weekSel" aria-label="week"></select>
+    </div>
+  </header>
+
+  <nav class="seg sources" id="srcSeg" role="group" aria-label="Source"></nav>
+
+  <h2 class="sec" data-t="notes"></h2>
+  <div id="notes"></div>
+
+  <h2 class="sec" data-t="compare"></h2>
+  <div class="tablewrap">
+    <table id="tbl">
+      <thead><tr>
+        <th data-t="th_brand"></th>
+        <th class="num" data-t="th_7"></th>
+        <th class="num" data-t="th_30"></th>
+        <th class="num" data-t="th_fresh"></th>
+        <th class="num" data-t="th_median"></th>
+        <th class="num" data-t="th_max"></th>
+        <th data-t="th_paid"></th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 class="sec" data-t="latest"></h2>
+  <div id="brands"></div>
+
+  <footer>
+    <p id="f1"></p>
+    <p id="f2"></p>
+    <p id="f3"></p>
+  </footer>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
