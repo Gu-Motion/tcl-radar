@@ -19,6 +19,8 @@ const T = {
     th_brand: 'Thương hiệu', th_7: '7 ngày', th_30: '30 ngày',
     th_fresh: 'Ngày từ bài mới', th_median: 'Trung vị', th_max: 'Cao nhất',
     fbpage: 'Fanpage',
+    gallery: 'Thiết kế bài đăng Facebook', gallery_sub: 'Ảnh chụp thiết kế các bài đăng trong tuần của từng hãng, để tham khảo phong cách. Bấm vào ảnh để xem cỡ lớn.',
+    open_post: 'Mở bài trên Facebook ↗', plat_all: 'Chung',
     th_paid: 'Dấu hiệu đẩy media',
     yes: 'có', no: 'không thấy',
     s7: 'bài trong 7 ngày', s30: 'bài trong 30 ngày',
@@ -39,6 +41,8 @@ const T = {
     th_brand: '品牌', th_7: '7 天', th_30: '30 天',
     th_fresh: '距最新内容', th_median: '中位数', th_max: '最高',
     fbpage: '粉丝页',
+    gallery: 'Facebook 帖子设计', gallery_sub: '各品牌本周帖子的设计截图，供参考风格。点击图片查看大图。',
+    open_post: '在 Facebook 打开帖子 ↗', plat_all: '综合',
     th_paid: '媒体投放迹象',
     yes: '有', no: '未发现',
     s7: '条 / 7 天', s30: '条 / 30 天',
@@ -130,9 +134,15 @@ function render() {
       }).join('');
 
   // nhan dinh
-  $('#notes').innerHTML = (DATA.notes || []).map(n =>
-    `<div class="note"><h3>${esc(n.title[lang] || n.title.vi)}</h3>
-     <p>${esc(n.body[lang] || n.body.vi)}</p></div>`).join('');
+  // Nhan dinh theo tab: tab YouTube chi hien nhan dinh YouTube, tab Facebook chi hien Facebook,
+  // tab Tat ca hien het kem nhan nen tang. Nhan dinh khong co "source" la nhan dinh chung.
+  const notes = (DATA.notes || []).filter(n => src === 'all' || !n.source || n.source === src);
+  $('#notes').innerHTML = notes.map(n => {
+    const tag = src === 'all' ? `<span class="ntag">${esc(n.source ? SOURCES[n.source][lang] : t.plat_all)}</span>` : '';
+    return `<div class="note${n.source ? ' n-' + n.source : ''}"><h3>${tag}${esc(n.title[lang] || n.title.vi)}</h3>
+     <p>${esc(n.body[lang] || n.body.vi)}</p></div>`; }).join('');
+
+  renderGallery(t);
 
   // bang so sanh
   const rows = DATA.brands.map(b => ({ b, items: visible(b), st: statsOf(visible(b)) }))
@@ -183,6 +193,42 @@ function render() {
   }).join('');
 }
 
+// Thu vien thiet ke Facebook: moi hang mot hang anh, bam de phong to.
+function renderGallery(t) {
+  const wrap = $('#galleryWrap');
+  const groups = DATA.brands.map(b => ({ b, items: b.items
+      .filter(i => i.source === 'facebook' && i.image).sort((x, y) => x.days - y.days) }))
+    .filter(g => g.items.length);
+  wrap.hidden = !(src === 'facebook' && groups.length);
+  if (wrap.hidden) return;
+  $('#gallery').innerHTML = groups.map(({ b, items }) => {
+    const c = COLOR[b.brand] || '#888', st = statsOf(b.items.filter(i => i.source === 'facebook'));
+    return `<div class="gbrand" style="--c:${c}">
+      <h3><span class="dot" style="--c:${c}"></span>${esc(b.brand)} <small>${items.length}</small></h3>
+      <div class="gstrip">${items.map(it => `
+        <figure class="gcard" data-brand="${esc(b.brand)}" data-id="${esc(it.id)}">
+          <div class="gimg"><img loading="lazy" src="${esc(it.image)}" alt="">
+            ${st.paid.has('facebook:' + it.id) ? `<span class="boost">${t.boost}</span>` : ''}
+            ${it.type !== 'post' ? '<span class="gplay">▶</span>' : ''}</div>
+          <figcaption><span class="gt">${esc(titleOf(it))}</span>
+            <span class="vm">${t.ago(it.days)} · ${fmt(it.views || 0)} ${esc(SOURCES.facebook.metric[lang])}</span></figcaption>
+        </figure>`).join('')}</div></div>`;
+  }).join('');
+}
+
+function openLB(brand, id) {
+  const b = DATA.brands.find(x => x.brand === brand); if (!b) return;
+  const it = b.items.find(x => x.id === id); if (!it) return;
+  const t = T[lang], lb = $('#lb');
+  lb.querySelector('img').src = it.image;
+  lb.querySelector('.lbcap').innerHTML =
+    `<b>${esc(brand)}</b> · ${esc(titleOf(it))}<br><span class="vm">${t.ago(it.days)} · ` +
+    `${fmt(it.views || 0)} ${esc(SOURCES.facebook.metric[lang])}` +
+    (it.reactions != null ? ` (${fmt(it.reactions)} 👍 · ${fmt(it.comments || 0)} 💬 · ${fmt(it.shares || 0)} ↗)` : '') +
+    `</span> · <a href="${esc(linkOf(it))}" target="_blank" rel="noopener">${t.open_post}</a>`;
+  lb.hidden = false;
+}
+
 async function loadWeek(w) {
   DATA = await (await fetch(`data/${w}.json`)).json();
   week = w;
@@ -210,6 +256,13 @@ function setLang(l) {
     src = b.dataset.src; render();
   });
   $('#weekSel').addEventListener('change', ev => loadWeek(ev.target.value));
+  $('#gallery').addEventListener('click', ev => {
+    const f = ev.target.closest('.gcard'); if (f) openLB(f.dataset.brand, f.dataset.id);
+  });
+  $('#lb').addEventListener('click', ev => {
+    if (ev.target.id === 'lb' || ev.target.closest('.lbx')) $('#lb').hidden = true;
+  });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') $('#lb').hidden = true; });
 
   setLang(lang);
   const idx = await (await fetch('data/index.json')).json();

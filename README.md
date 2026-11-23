@@ -54,8 +54,12 @@ Thêm ngôn ngữ mới: thêm một khối vào `T` trong `assets/app.js` và m
 - `views` với Facebook là **tổng tương tác** (cảm xúc + bình luận + chia sẻ),
   vì Facebook không công khai lượt xem bài đăng. Trang ghi rõ đơn vị “tương tác”.
 - `type`: `post`, `video` hoặc `reel` (video/reel có nút ▶).
-- Bài Facebook không có ảnh (link ảnh Facebook hết hạn sau khoảng 4 ngày), trang
-  hiện ô màu của hãng thay ảnh. Nếu có `image` (đường dẫn trong repo) thì trang dùng.
+- `image`: ảnh chụp thiết kế bài đăng, lưu trong `assets/shots/<tuần>/` (chụp bằng
+  trình duyệt rồi cắt bằng `collect/fb_crop.py`, vì link ảnh gốc của Facebook hết hạn
+  sau khoảng 4 ngày). Tab Facebook có mục "Thiết kế bài đăng Facebook" hiện toàn bộ
+  ảnh theo từng hãng, bấm để phóng to.
+- `notes[].source`: `youtube` / `facebook` / bỏ trống (chung) — mỗi tab chỉ hiện
+  nhận định của nền tảng đó.
 - Fanpage từng hãng khai báo ở `brands[].channels.facebook`.
 
 Cách lấy dữ liệu: `collect/EXTRACT.md` (phần Facebook), `collect/fb_grab.js`,

@@ -86,8 +86,24 @@ Mỗi fanpage đều lấy từ link Facebook trên website chính thức tại 
 3. `lo: true` nghĩa là Facebook đã đăng xuất → dừng phần Facebook, báo người dùng
    đăng nhập lại. Nếu `p` rỗng hoặc dưới 3 bài: chờ 5 giây, chạy lại một lần;
    vẫn rỗng thì ghi nhận hãng đó không lấy được.
-4. Ảnh: **không lấy**. Link ảnh Facebook hết hạn sau khoảng 4 ngày và máy chạy code
-   không tải được ảnh từ Facebook, nên bài Facebook hiện ô màu thay ảnh.
+4. Chụp thiết kế (ngay trên trang đó, ngay sau khi lấy dữ liệu — mã bài `pfbid…`
+   có thể đổi giữa các phiên, nên phải chụp trong cùng lần lấy):
+   - Chạy đoạn sau để chuẩn bị (nền hồng #f0f để cắt viền tự động):
+     ```js
+     window.__ov = () => { let o=document.getElementById('__ov'); if(!o){o=document.createElement('div');o.id='__ov';document.body.appendChild(o);} o.style.cssText='position:fixed;inset:0;z-index:2147483647;background:#f0f;display:flex;align-items:center;justify-content:center'; o.innerHTML=''; return o; };
+     window.__want = __fb.posts.filter(p => p.days !== null && p.days <= 7);
+     window.__capN = async (i) => { const p=__want[i]; const o=__ov(); if (p.img) { const im=new Image(); im.style.cssText='max-width:100vw;max-height:100vh;display:block'; im.src=p.img; o.appendChild(im); await im.decode().catch(()=>{}); return p.id+' img'; } o.remove(); return p.id+' none'; };
+     JSON.stringify(__want.map((p,i) => i+':'+p.id+':'+(p.img?1:0)))
+     ```
+   - Với mỗi bài có ảnh (`:1`), dùng `browser_batch` xen kẽ: `javascript_tool`
+     `await __capN(i)` rồi `computer` `screenshot` (độ phân giải đầy đủ, KHÔNG
+     dùng scale). Mỗi ảnh chụp được lưu thành file trong thư mục kết quả công cụ
+     (đường dẫn hiện ngay dưới ảnh, dạng `/tmp/claude-tool-results/…/…jpg`).
+   - Bỏ ảnh nào chỉ là khung đen/trống/logo (khung đầu của reel) — không có giá trị tham khảo.
+   - Sau khi đã chạy `fb_merge.py` (bước "Ghi vào file tuần"), gắn ảnh vào bài:
+     `python3 collect/fb_crop.py YYYY-MM-DD <Hãng> <id_bài>=<file_ảnh_chụp> ...`
+     Script cắt viền hồng, lưu `assets/shots/YYYY-MM-DD/<hãng>-<8 ký tự cuối id>.jpg`
+     và ghi `image` vào bài. Ảnh hiện ở mục "Thiết kế bài đăng Facebook" (tab Facebook).
 
 Tiêu đề hiển thị: rút gọn đoạn chữ của bài thành một câu ngắn (dưới ~100 ký tự,
 giữ tên sản phẩm / chiến dịch), dịch câu đó sang tiếng Trung giản thể cho `text_zh`.
@@ -111,7 +127,10 @@ Không commit file tạm.
 
 ## Nhận định Facebook
 
-Viết chung trong `notes` với YouTube, nêu rõ nền tảng. Gợi ý so sánh:
+Mỗi mục trong `notes` có trường `"source"`: `"youtube"` hoặc `"facebook"` (để trống =
+nhận định chung cả hai). Tab YouTube / Facebook chỉ hiện nhận định của nền tảng đó.
+Luôn có một nhận định Facebook về **phong cách thiết kế** trong tuần (màu, bố cục,
+typography, khuôn mẫu cố định, ảnh AI, tỉ lệ khung) dựa trên các ảnh đã chụp. Gợi ý so sánh:
 số bài/tuần từng hãng; bài nào tương tác vượt hẳn trung vị Facebook của hãng
 (dấu hiệu chạy quảng cáo); chủ đề lặp lại (khuyến mãi, Tết, livestream bán hàng,
 minigame); hãng nào hoạt động mạnh trên Facebook nhưng im ở YouTube hoặc ngược lại.
