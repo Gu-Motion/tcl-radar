@@ -1,0 +1,740 @@
+{
+ "week": "2026-11-23",
+ "sources": [
+  "youtube"
+ ],
+ "notes": [
+  {
+   "title": {
+    "vi": "Tuần lặng: không hãng nào đăng video mới",
+    "zh": "平静的一周：五家均无新视频"
+   },
+   "body": {
+    "vi": "Từ mốc 20/11 đến 23/11 (chỉ 3 ngày), cả 5 kênh không có video mới nào. Video mới nhất mỗi kênh vẫn là video đã có tuần trước: Samsung 3 ngày, LG 5 ngày, Toshiba và AQUA 3 tuần, Hisense 2 tháng. Lượt xem các video thường chỉ nhích vài chục lượt (ví dụ Samsung Health tim mạch 169 → 284, LG thiết kế thương mại 53 → 79). Khoảng cách 3 ngày còn ngắn, nên tuần sau mới đánh giá được nhịp đăng.",
+    "zh": "自 11/20 基线至 11/23（仅 3 天），五个频道均无新视频。各频道最新视频仍是上周已收录的：三星 3 天、LG 5 天、东芝与 AQUA 3 周、海信 2 个月。普通视频播放量只增加几十次（如三星心血管健康视频 169 → 284，LG 商业设计视频 53 → 79）。间隔仅 3 天，发布节奏需下周再判断。"
+   }
+  },
+  {
+   "title": {
+    "vi": "Toshiba \"Origin\" đã chững: lượt xem gần như đứng yên",
+    "zh": "东芝「Origin」已停滞：播放量几乎不动"
+   },
+   "body": {
+    "vi": "6 video Origin cộng lại vẫn khoảng 1,86 triệu lượt, y như tuần trước; chỉ OriginColor nhích từ 317 N lên 318 N. YouTube làm tròn tới hàng nghìn nên mức tăng thật mỗi video dưới 1.000 lượt trong 3 ngày, trong khi cả loạt đã đạt gần 1,9 triệu trong khoảng một tháng. Nhiều khả năng đợt chạy quảng cáo cho loạt này đã dừng hoặc giảm mạnh. Toshiba cũng chưa ra nội dung kế tiếp.",
+    "zh": "六条 Origin 视频合计仍约 186 万次播放，与上周相同；仅 OriginColor 从 31.7 万升至 31.8 万。YouTube 播放数按千位取整，因此每条视频 3 天内实际增量不足 1,000 次，而整个系列此前约一个月就累计近 190 万。该系列的广告投放很可能已停止或大幅缩减。东芝也尚未推出后续内容。"
+   }
+  },
+  {
+   "title": {
+    "vi": "Đính chính về Samsung: kênh có chạy media mạnh, nhưng cho Galaxy",
+    "zh": "更正三星判断：频道有强力投放，但集中在 Galaxy"
+   },
+   "body": {
+    "vi": "Tuần này lấy được sâu hơn tuần trước, lộ ra 4 video khoảng 1 tháng tuổi có dấu hiệu đẩy media rất mạnh: \"Gập Mở Galaxy Z Fold8 cùng j-hope\" 4 triệu lượt, \"Giới thiệu Galaxy Tab S12 Ultra\" 315 N, \"Note Assist\" 209 N, \"Gemini Notebook\" 137 N, trong khi trung vị kênh chỉ 577. Đây không phải video mới. Nhận định tuần trước rằng Samsung không dồn ngân sách lên kênh là chưa đúng: có dồn, nhưng cho điện thoại và máy tính bảng. Mảng màn hình (Odyssey, TV) vẫn chỉ vài trăm lượt.",
+    "zh": "本周抓取深度大于上周，发现 4 条约一个月前发布的视频有非常强的投放迹象：「与 j-hope 一起开合 Galaxy Z Fold8」400 万次、「Galaxy Tab S12 Ultra 介绍」31.5 万、「Note Assist」20.9 万、「Gemini Notebook」13.7 万，而频道中位数仅 577。这些并非新视频。上周「三星未把预算投在频道上」的判断不准确：确有投放，但集中在手机和平板。显示品类（Odyssey、电视）仍只有几百次播放。"
+   }
+  },
+  {
+   "title": {
+    "vi": "Vẫn chưa ai mở màn Tết",
+    "zh": "仍无品牌开启春节战役"
+   },
+   "body": {
+    "vi": "Không có video, cụm từ hay hashtag nào liên quan Tết trên cả 5 kênh, và không xuất hiện cụm từ hay hashtag mới nào lặp lại. Hisense vẫn im lặng: video mới nhất đã 2 tháng, cao nhất 19 lượt. Khoảng trống Tết cho TCL vẫn còn nguyên.",
+    "zh": "五个频道均无任何春节相关视频、用语或话题标签，也未出现新的重复用语或标签。海信仍然沉默：最新视频已发布 2 个月，最高仅 19 次播放。留给 TCL 的春节空档依然存在。"
+   }
+  }
+ ],
+ "brands": [
+  {
+   "brand": "Samsung",
+   "channels": {
+    "youtube": {
+     "name": "Samsung Vietnam",
+     "name_zh": "三星越南",
+     "url": "https://www.youtube.com/user/samsungvietnam/videos"
+    }
+   },
+   "items": [
+    {
+     "source": "youtube",
+     "id": "ZYQIHjOkR9g",
+     "title": "Kiến tạo sức khoẻ tim mạch với Samsung Health | Galaxy AI",
+     "len": "0:31",
+     "views": 284,
+     "days": 3,
+     "title_zh": "用 Samsung Health 打造心血管健康 | Galaxy AI"
+    },
+    {
+     "source": "youtube",
+     "id": "2xHNhWKDiZU",
+     "title": "Trải nghiệm The Odyssey trên màn ảnh tại gia | Samsung",
+     "len": "0:18",
+     "views": 431,
+     "days": 4,
+     "title_zh": "在家中大屏体验 The Odyssey | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "TOalLR0D5Ts",
+     "title": "Xây dựng Chỉ số Thể lực với Samsung Health | Galaxy AI",
+     "len": "0:31",
+     "views": 429,
+     "days": 8,
+     "title_zh": "用 Samsung Health 建立体能指数 | Galaxy AI"
+    },
+    {
+     "source": "youtube",
+     "id": "K1E8bx7Zr_c",
+     "title": "Quản lý trọn sức khoẻ | Samsung Health | Samsung",
+     "len": "0:52",
+     "views": 420,
+     "days": 9,
+     "title_zh": "全面管理健康 | Samsung Health | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "nBbH1eqCua8",
+     "title": "Cùng Hope Gập Mở Chuẩn Mới | Galaxy Z Fold8 | Samsung",
+     "len": "1:31",
+     "views": 634,
+     "days": 14,
+     "title_zh": "与 Hope 一同折叠新标准 | Galaxy Z Fold8 | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "LiizLbdxUuI",
+     "title": "Odyssey: Vũ khí tối thượng, xứng tầm huyền thoại T1 | Samsung",
+     "len": "0:57",
+     "views": 548,
+     "days": 21,
+     "title_zh": "Odyssey：配得上 T1 传奇的终极武器 | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "YDqRj09d_gQ",
+     "title": "Khám phá trợ lý AI TV cùng T1 | Samsung",
+     "len": "0:47",
+     "views": 453,
+     "days": 21,
+     "title_zh": "与 T1 一起探索 AI 电视助手 | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "md3xfLkTXJA",
+     "title": "Giới thiệu bộ sưu tập dây đeo Galaxy Watch9 mới | Samsung",
+     "len": "1:26",
+     "views": 561,
+     "days": 21,
+     "title_zh": "Galaxy Watch9 全新表带系列介绍 | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "wNMPB9Nrlhw",
+     "title": "Gập Mở Galaxy Z Fold8 cùng j-hope | Galaxy Al | Samsung",
+     "len": "1:44",
+     "views": 4000000,
+     "days": 30,
+     "title_zh": "与 j-hope 一起开合 Galaxy Z Fold8 | Galaxy AI | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "X7RAocBygqM",
+     "title": "Cùng bắt đầu với SmartThings Family Care | Samsung",
+     "len": "0:53",
+     "views": 593,
+     "days": 30,
+     "title_zh": "一起开启 SmartThings Family Care | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "pXce3KBf8P0",
+     "title": "Gemini Notebook | Galaxy Tab S12 Ultra | Samsung",
+     "len": "0:38",
+     "views": 137000,
+     "days": 30,
+     "title_zh": "Gemini 笔记本 | Galaxy Tab S12 Ultra | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "cQeayEiQLTw",
+     "title": "Giới thiệu Galaxy Tab S12 Ultra | Samsung",
+     "len": "2:16",
+     "views": 315000,
+     "days": 30,
+     "title_zh": "Galaxy Tab S12 Ultra 介绍 | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "dMuNowFnWL4",
+     "title": "Note Assist | Galaxy AI | Galaxy Tab S12 Ultra | Samsung",
+     "len": "0:37",
+     "views": 209000,
+     "days": 30,
+     "title_zh": "笔记助手 | Galaxy AI | Galaxy Tab S12 Ultra | 三星"
+    },
+    {
+     "source": "youtube",
+     "id": "NF2enKYxCCs",
+     "title": "Sáng tạo cùng S Pen trên Creative Studio | Galaxy AI | Galaxy Tab S12 Series | Samsung",
+     "len": "2:44",
+     "views": 612,
+     "days": 30,
+     "title_zh": "在 Creative Studio 上用 S Pen 创作 | Galaxy AI | Galaxy Tab S12 系列 | 三星"
+    }
+   ]
+  },
+  {
+   "brand": "Toshiba",
+   "channels": {
+    "youtube": {
+     "name": "Toshiba Lifestyle Vietnam",
+     "name_zh": "东芝生活越南",
+     "url": "https://www.youtube.com/@ToshibalifestyleVietnam/videos"
+    }
+   },
+   "items": [
+    {
+     "source": "youtube",
+     "id": "3oyNKGkGw3s",
+     "title": "[iTVC] ĐIỀU HÒA TOSHIBA F2 SERIES - ĐỂ MÁT LÀNH LÀ CHUYỆN THƯỜNG NHẬT",
+     "len": "0:41",
+     "views": 894,
+     "days": 21,
+     "title_zh": "[iTVC] 东芝 F2 系列空调 — 让清凉成为日常"
+    },
+    {
+     "source": "youtube",
+     "id": "5Tghof-CdEo",
+     "title": "ĐIỀU HÒA TOSHIBA F2 SERIES - CÙNG ĐÓN CHỜ ĐIỀU THƯỜNG NHẬT MỚI",
+     "len": "0:10",
+     "views": 544,
+     "days": 21,
+     "title_zh": "东芝 F2 系列空调 — 共同期待全新日常"
+    },
+    {
+     "source": "youtube",
+     "id": "bFKyDG7jPfc",
+     "title": "TỦ LẠNH ĐỌNG SƯƠNG, “TOÁT MỒ HÔI”: CÓ PHẢI ĐANG BỊ HƯ? 🤔",
+     "len": "1:55",
+     "views": 370,
+     "days": 21,
+     "title_zh": "冰箱结露「冒汗」：是不是坏了？🤔"
+    },
+    {
+     "source": "youtube",
+     "id": "DbuGhVxei2U",
+     "title": "Công nghệ OriginClean Từ Máy Rửa Chén Toshiba - Giữ Trọn Sạch Bong, Khô Ráo Sạch Khuẩn",
+     "len": "0:15",
+     "views": 470000,
+     "days": 30,
+     "title_zh": "东芝洗碗机 OriginClean 技术 — 洁净如新，干爽除菌"
+    },
+    {
+     "source": "youtube",
+     "id": "YVTm_sCZniI",
+     "title": "Công nghệ OriginPure Từ Máy Lọc Nước Toshiba - Giữ Trọn Tinh Khiết, Thưởng Vị Tự Nhiên",
+     "len": "0:15",
+     "views": 328000,
+     "days": 30,
+     "title_zh": "东芝净水器 OriginPure 技术 — 纯净如初，品味自然"
+    },
+    {
+     "source": "youtube",
+     "id": "o8a3YcDIs2U",
+     "title": "Công nghệ OriginTaste Từ Lò Vi Sóng Toshiba - Giữ Trọn Vị Ngon, Tròn Vị Dưỡng Chất",
+     "len": "0:15",
+     "views": 441000,
+     "days": 30,
+     "title_zh": "东芝微波炉 OriginTaste 技术 — 锁住美味，留住营养"
+    },
+    {
+     "source": "youtube",
+     "id": "vRX3DwiCtAQ",
+     "title": "Công nghệ OriginTaste Từ Nồi Cơm Điện Toshiba - Giữ Trọn Vị Ngon, Tròn Vị Dưỡng Chất",
+     "len": "0:15",
+     "views": 279000,
+     "days": 30,
+     "title_zh": "东芝电饭煲 OriginTaste 技术 — 锁住美味，留住营养"
+    },
+    {
+     "source": "youtube",
+     "id": "QM4ryDDIH10",
+     "title": "Công nghệ OriginColor Từ Máy Giặt Toshiba - Giữ Trọn Sắc Màu, Giữ Vẻ Nguyên Bản",
+     "len": "0:15",
+     "views": 318000,
+     "days": 30,
+     "title_zh": "东芝洗衣机 OriginColor 技术 — 锁住色彩，保持原貌"
+    },
+    {
+     "source": "youtube",
+     "id": "Zbr7J41ZDCc",
+     "title": "Công Nghệ OriginFresh Từ Tủ Lạnh Toshiba - Giữ Trọn Độ Tươi, Khơi Nguồn Sống Khỏe",
+     "len": "0:15",
+     "views": 22000,
+     "days": 30,
+     "title_zh": "东芝冰箱 OriginFresh 技术 — 锁住新鲜，焕发健康"
+    },
+    {
+     "source": "youtube",
+     "id": "R-VuEzsTsqI",
+     "title": "LỄ HỘI TOSHIBA 2026 - GẮN KẾT TỪ TRẢI NGHIỆM, THẤU HIỂU ĐỂ ĐỒNG HÀNH",
+     "len": "2:37",
+     "views": 1100,
+     "days": 30,
+     "title_zh": "2026 东芝节 — 以体验相连，以理解同行"
+    },
+    {
+     "source": "youtube",
+     "id": "3NmQUu6fqZ8",
+     "title": "THÁP GIẶT SẤY TOSHIBA T40 - THIẾT KẾ TINH GỌN, TỐI ƯU TRẢI NGHIỆM | LẦN ĐẦU RA MẮT TẠI VIỆT NAM",
+     "len": "1:50",
+     "views": 841,
+     "days": 30,
+     "title_zh": "东芝 T40 洗烘塔 — 设计精巧，体验优化 | 越南首发"
+    },
+    {
+     "source": "youtube",
+     "id": "ndBFMNMsOok",
+     "title": "NHÌN LẠI HỘI NGHỊ ĐỐI TÁC CHIẾN LƯỢC 2026 NGÀNH HÀNG MÁY GIẶT – MÁY SẤY | PHÚ QUỐC",
+     "len": "4:15",
+     "views": 340,
+     "days": 30,
+     "title_zh": "回顾 2026 洗衣机烘干机战略伙伴会议 | 富国岛"
+    },
+    {
+     "source": "youtube",
+     "id": "JtvwQgYIZf4",
+     "title": "MÁY GIẶT CỬA TRƯỚC T31 (MỚI 2026) - TỐI ƯU KHÔNG GIAN SỐNG, THƠM MÁT TỪNG SỢI VẢI",
+     "len": "0:54",
+     "views": 624,
+     "days": 30,
+     "title_zh": "T31 前开式洗衣机（2026 新品）— 优化居住空间，每根纤维清香"
+    },
+    {
+     "source": "youtube",
+     "id": "zDGS9XrI_qk",
+     "title": "THÁP GIẶT SẤY T40 (MỚI 2026) - THIẾT KẾ TINH GỌN, TỐI ƯU TRẢI NGHIỆM",
+     "len": "1:06",
+     "views": 975,
+     "days": 30,
+     "title_zh": "T40 洗烘塔（2026 新品）— 设计精巧，体验优化"
+    }
+   ]
+  },
+  {
+   "brand": "LG",
+   "channels": {
+    "youtube": {
+     "name": "LG Vietnam",
+     "name_zh": "LG 越南",
+     "url": "https://www.youtube.com/@LGVietnam/videos"
+    }
+   },
+   "items": [
+    {
+     "source": "youtube",
+     "id": "kCausGefiNw",
+     "title": "Giải pháp thông minh trong thiết kế thương mại cùng LG",
+     "len": "13:21",
+     "views": 79,
+     "days": 5,
+     "title_zh": "LG 商业设计智能解决方案"
+    },
+    {
+     "source": "youtube",
+     "id": "hWeSXmtgZ54",
+     "title": "Hành trình kiến tạo chốn trở về tiện nghi cùng hệ sinh thái thiết bị LG",
+     "len": "2:52",
+     "views": 140,
+     "days": 13,
+     "title_zh": "用 LG 设备生态系统打造舒适归处"
+    },
+    {
+     "source": "youtube",
+     "id": "jMZ6BDMvZgE",
+     "title": "LG HOTEL TV - TRẢI NGHIỆM HIỂN THỊ  5 SAO CỦA NGÀNH DỊCH VỤ LƯU TRÚ",
+     "len": "13:31",
+     "views": 257,
+     "days": 14,
+     "title_zh": "LG HOTEL TV — 住宿业的五星显示体验"
+    },
+    {
+     "source": "youtube",
+     "id": "RGnCzFpKc6s",
+     "title": "Khám phá hệ sinh thái LG trong không gian sống của NTK Đỗ Mạnh Cường",
+     "len": "5:35",
+     "views": 123,
+     "days": 14,
+     "title_zh": "探索设计师 Do Manh Cuong 生活空间中的 LG 生态系统"
+    },
+    {
+     "source": "youtube",
+     "id": "LAzfT9NEUgc",
+     "title": "LAN TỎA TRI THỨC, CHẮP CÁNH ƯỚC MƠ CÙNG LG AMBASSADOR CHALLENGE 2026",
+     "len": "2:29",
+     "views": 124,
+     "days": 14,
+     "title_zh": "LG AMBASSADOR CHALLENGE 2026 — 传播知识，放飞梦想"
+    },
+    {
+     "source": "youtube",
+     "id": "ELSnViTmqj0",
+     "title": "CÙNG LG ELECTRONICS VIETNAM KIẾN TẠO MÔI TRƯỜNG HỌC TẬP TỐT HƠN CHO THẾ HỆ TƯƠNG LAI",
+     "len": "2:57",
+     "views": 186,
+     "days": 28,
+     "title_zh": "LG 越南携手为下一代打造更好的学习环境"
+    },
+    {
+     "source": "youtube",
+     "id": "6Vth2jeJAJ4",
+     "title": "Máy giặt LG + AI Wash 2.0: Bớt phải chọn, thêm phần tận hưởng",
+     "len": "0:31",
+     "views": 184,
+     "days": 30,
+     "title_zh": "LG 洗衣机 + AI Wash 2.0：少做选择，多享生活"
+    },
+    {
+     "source": "youtube",
+     "id": "s7HRZozac_g",
+     "title": "NHÌN LẠI KHOẢNH KHẮC SÁNG TẠO, HOÀN THIỆN BỘ SƯU TẬP THỜI TRANG CHUẨN HÀN TẠI ANOTHER SAIGON BY LG!",
+     "len": "1:16",
+     "views": 291,
+     "days": 30,
+     "title_zh": "回顾 ANOTHER SAIGON BY LG 创作时刻，完成韩风时尚系列！"
+    },
+    {
+     "source": "youtube",
+     "id": "DkpGe6EUXL8",
+     "title": "LG OLED ULTRAGEAR GX9 - MỞ RỘNG CUỘC CHƠI, NỐI DÀI CUỘC VUI",
+     "len": "1:07",
+     "views": 283,
+     "days": 30,
+     "title_zh": "LG OLED ULTRAGEAR GX9 — 拓展战局，延续乐趣"
+    },
+    {
+     "source": "youtube",
+     "id": "ppvWye_WcLM",
+     "title": "GỢI LẠI CHÚT KỶ NIỆM \"TRĂM DA ĐUA NỞ\" TẠI ANOTHER SAIGON BY LG! 🌸💖",
+     "len": "1:15",
+     "views": 152,
+     "days": 30,
+     "title_zh": "重温 ANOTHER SAIGON BY LG「百花争艳」回忆！🌸💖"
+    },
+    {
+     "source": "youtube",
+     "id": "peXvcWSjGeI",
+     "title": "CHẠM VỊ HÀN TRONG GIAN BẾP VIỆT: HÀNH TRÌNH ĐÁNH THỨC CẢM HỨNG BẾP NÚC TẠI ANOTHER SAIGON BY LG! 🧀✨",
+     "len": "1:23",
+     "views": 163,
+     "days": 30,
+     "title_zh": "越南厨房里的韩国味：在 ANOTHER SAIGON BY LG 唤醒烹饪灵感！🧀✨"
+    },
+    {
+     "source": "youtube",
+     "id": "p5qU7-c-9TY",
+     "title": "✨ MUÔN KIỂU VỪA Ý - NHÌN LẠI NHỮNG KHOẢNH KHẮC ĐÁNG NHỚ CÙNG LG",
+     "len": "1:06",
+     "views": 154,
+     "days": 30,
+     "title_zh": "✨ 万般称心 — 回顾与 LG 的难忘瞬间"
+    },
+    {
+     "source": "youtube",
+     "id": "Sf0bkfVOn0E",
+     "title": "LG STYLER | Điều gì làm nên giá trị của một món trang phục?",
+     "len": "1:05",
+     "views": 66000,
+     "days": 60,
+     "title_zh": "LG STYLER | 一件衣服的价值从何而来？"
+    },
+    {
+     "source": "youtube",
+     "id": "WkhELWbtTVE",
+     "title": "MỘT NGƯỜI BẠN CHO MỌI NHỊP SỐNG",
+     "len": "0:48",
+     "views": 256,
+     "days": 60,
+     "title_zh": "陪伴每一段生活节奏的朋友"
+    }
+   ]
+  },
+  {
+   "brand": "AQUA",
+   "channels": {
+    "youtube": {
+     "name": "AQUA Việt Nam",
+     "name_zh": "AQUA 越南",
+     "url": "https://www.youtube.com/@Aquavietnam/videos"
+    }
+   },
+   "items": [
+    {
+     "source": "youtube",
+     "id": "2KulfF-NhCM",
+     "title": "KẾT NỐI APP HAISMART, ĐIỀU KHIỂN ĐIỀU HÒA NGAY TRÊN ĐIỆN THOẠI 📱",
+     "len": "0:48",
+     "views": 194,
+     "days": 21,
+     "title_zh": "连接 HAISMART 应用，用手机操控空调 📱"
+    },
+    {
+     "source": "youtube",
+     "id": "zaeYypKEWDM",
+     "title": "SEA BADMINTON TOURNAMENT 2026: TRỌN VẸN BẢN LĨNH VÀ CẢM XÚC GIAO HỮU VIỆT - INDO! 🌟🏸",
+     "len": "1:58",
+     "views": 171,
+     "days": 90,
+     "title_zh": "SEA BADMINTON TOURNAMENT 2026：越南-印尼友谊赛，尽显实力与情感！🌟🏸"
+    },
+    {
+     "source": "youtube",
+     "id": "s1sQqPgBOYg",
+     "title": "[RECAP] AQUA CUP 2026: KHÉP LẠI HÀNH TRÌNH BÙNG NỔ CỦA NHỮNG ĐAM MÊ! 🏆🔥",
+     "len": "3:18",
+     "views": 375,
+     "days": 90,
+     "title_zh": "[回顾] AQUA CUP 2026：激情之旅圆满收官！🏆🔥"
+    },
+    {
+     "source": "youtube",
+     "id": "lMRGL49VvB0",
+     "title": "TỦ LẠNH AQUA GIỮ TRỌN HƯƠNG VỊ NGUYÊN BẢN —NÂNG TẦM BỮA ĂN GIA ĐÌNH 🥩🥗",
+     "len": "1:02",
+     "views": 197,
+     "days": 90,
+     "title_zh": "AQUA 冰箱锁住原味 — 提升家庭餐桌 🥩🥗"
+    },
+    {
+     "source": "youtube",
+     "id": "4QFESXMyYpE",
+     "title": "REVIEW CHIẾC TỦ LẠNH \"HIỂU Ý\" BA MẸ NHẤT CỦA HƯƠNG LÝ 🎬",
+     "len": "3:10",
+     "views": 321,
+     "days": 180,
+     "title_zh": "Huong Ly 评测最「懂」父母心的冰箱 🎬"
+    },
+    {
+     "source": "youtube",
+     "id": "nw_O8xsGJJk",
+     "title": "🏠NHÀ MỚI CHO BA MẸ, CẦN MỘT \"QUẢN GIA\" TỦ LẠNH AQUA SPACE FIT TẬN TÂM",
+     "len": "3:03",
+     "views": 173,
+     "days": 180,
+     "title_zh": "🏠父母的新家，需要一位贴心的 AQUA Space Fit 冰箱「管家」"
+    },
+    {
+     "source": "youtube",
+     "id": "-7jlZRRH5Z0",
+     "title": "NIỀM TIN NỐI TIẾP – KHI TỔ ẤM MỚI VẪN LÀ NGƯỜI BẠN CŨ AQUA 🏠💙",
+     "len": "3:16",
+     "views": 491,
+     "days": 180,
+     "title_zh": "信任延续 — 新家依然选择老朋友 AQUA 🏠💙"
+    },
+    {
+     "source": "youtube",
+     "id": "Sf4BNmp8uLE",
+     "title": "TRỞ THÀNH TRI KỶ TIẾP THEO CỦA AQUA: Tại sao không? ✨ TẬP 2 - GÕ CỬA NHÀ TRI KỶ",
+     "len": "3:32",
+     "views": 389,
+     "days": 210,
+     "title_zh": "成为 AQUA 的下一位知己：为什么不呢？✨ 第二集 — 敲开知己之门"
+    },
+    {
+     "source": "youtube",
+     "id": "KuE1GKtycQg",
+     "title": "GÕ CỬA NHÀ TRI KỶ TẬP 1: KHI CĂN HỘ CHUNG CƯ CÓ THÊM \"TRI KỶ\" ĐO NI ĐÓNG GIÀY! 🏙️✨",
+     "len": "3:31",
+     "views": 348,
+     "days": 210,
+     "title_zh": "敲开知己之门 第一集：当公寓迎来量身定制的「知己」！🏙️✨"
+    },
+    {
+     "source": "youtube",
+     "id": "MMM1Bd-SEsk",
+     "title": "⭐️FACTORY TOUR 2026: GIẢI MÃ \"CHẤT LƯỢNG TIN CẬY\" CỦA AQUA VIỆT NAM",
+     "len": "1:30",
+     "views": 803,
+     "days": 270,
+     "title_zh": "⭐️2026 工厂探访：解密 AQUA 越南的「可靠品质」"
+    },
+    {
+     "source": "youtube",
+     "id": "kKpfxJ3j3Xc",
+     "title": "CẢM ƠN BẠN – VÌ ĐÃ CÙNG AQUA VIẾT NÊN 30 NĂM RỰC RỠ 🎇",
+     "len": "3:16",
+     "views": 1200,
+     "days": 270,
+     "title_zh": "感谢你 — 与 AQUA 共同书写辉煌 30 年 🎇"
+    },
+    {
+     "source": "youtube",
+     "id": "QAy-Ia34eZI",
+     "title": "RECAP SỰ KIỆN RA MẮT TỦ LẠNH ÂM TƯỜNG AQUA SPACE FIT - HÒA HỢP VÔ HẠN",
+     "len": "1:58",
+     "views": 587,
+     "days": 365,
+     "title_zh": "回顾 AQUA Space Fit 嵌入式冰箱发布会 — 无限融合"
+    },
+    {
+     "source": "youtube",
+     "id": "2FivSfRUOoI",
+     "title": "Tủ lạnh âm tường AQUA Space Fit - Bước tiến cho thế hệ tủ lạnh hòa hợp vô hạn",
+     "len": "0:31",
+     "views": 862000,
+     "days": 365,
+     "title_zh": "AQUA Space Fit 嵌入式冰箱 — 无限融合冰箱的新一步"
+    },
+    {
+     "source": "youtube",
+     "id": "sFjKgLI-wfs",
+     "title": "AQUA SERVICE - An Tâm từ Sự Đồng Hành",
+     "len": "3:41",
+     "views": 431,
+     "days": 365,
+     "title_zh": "AQUA 服务 — 陪伴带来安心"
+    }
+   ]
+  },
+  {
+   "brand": "Hisense",
+   "channels": {
+    "youtube": {
+     "name": "Hisense Vietnam",
+     "name_zh": "海信越南",
+     "url": "https://www.youtube.com/@HisenseVietnam/videos"
+    }
+   },
+   "items": [
+    {
+     "source": "youtube",
+     "id": "vfkCCR6cA7Q",
+     "title": "🦉🍿 Tại sao phải chen chúc quanh một màn hình nhỏ khi bạn có thể mang cả rạp chiếu phim về nhà?",
+     "len": "0:22",
+     "views": 19,
+     "days": 60,
+     "title_zh": "🦉🍿 能把整座影院搬回家，何必挤在小屏幕前？"
+    },
+    {
+     "source": "youtube",
+     "id": "bUq93ftpRBY",
+     "title": "🦎✨ Đến tắc kè hoa còn phải ấn tượng trước những sắc màu này",
+     "len": "0:21",
+     "views": 11,
+     "days": 60,
+     "title_zh": "🦎✨ 连变色龙都要为这些色彩折服"
+    },
+    {
+     "source": "youtube",
+     "id": "Vpi5njvk1sQ",
+     "title": "🎬🎮 Đêm xem phim, đêm gaming hay đơn giản là muốn trải nghiệm màn hình lớn hơn",
+     "len": "2:31",
+     "views": 10,
+     "days": 60,
+     "title_zh": "🎬🎮 电影之夜、游戏之夜，或只是想要更大的屏幕"
+    },
+    {
+     "source": "youtube",
+     "id": "N1HbcuXvYXA",
+     "title": "Có Những Giấc Mơ Bắt Đầu Từ Sân Cỏ Đơn Sơ | Hisense × FIFA World Cup 2026™",
+     "len": "4:22",
+     "views": 66,
+     "days": 180,
+     "title_zh": "有些梦想始于简陋球场 | 海信 × 2026 FIFA 世界杯™"
+    },
+    {
+     "source": "youtube",
+     "id": "WzIzUa1-oBk",
+     "title": "See Every Shadow. Feel Every Frame. | Hisense × Phantom Blade Zero",
+     "len": "0:50",
+     "views": 28,
+     "days": 180,
+     "title_zh": "See Every Shadow. Feel Every Frame. | 海信 × 影之刃零"
+    },
+    {
+     "source": "youtube",
+     "id": "VtUZQPFfMnY",
+     "title": "HISENSE RQ600P7AB PUREVIEW",
+     "len": "2:33",
+     "views": 102,
+     "days": 180,
+     "title_zh": "海信 RQ600P7AB PUREVIEW"
+    },
+    {
+     "source": "youtube",
+     "id": "QavJmuuWnc8",
+     "title": "X ZONE MASTER | HISENSE",
+     "len": "1:50",
+     "views": 495,
+     "days": 180,
+     "title_zh": "X ZONE MASTER | 海信"
+    },
+    {
+     "source": "youtube",
+     "id": "rt7SCWOQ0nk",
+     "title": "Hisense tại IFA 2025 | Nhà tài trợ chính thức của FIFA World Cup 2026™",
+     "len": "2:18",
+     "views": 125,
+     "days": 240,
+     "title_zh": "海信亮相 IFA 2025 | 2026 FIFA 世界杯™ 官方赞助商"
+    },
+    {
+     "source": "youtube",
+     "id": "zUFq7nHeo9o",
+     "title": "✨ Innovating a Brighter Life with Hisense || CES 2026",
+     "len": "2:04",
+     "views": 56,
+     "days": 300,
+     "title_zh": "✨ 以创新点亮美好生活 || CES 2026"
+    },
+    {
+     "source": "youtube",
+     "id": "vg08qTrivXo",
+     "title": "🏆 A Legacy of Innovation ✨",
+     "len": "2:58",
+     "views": 13,
+     "days": 300,
+     "title_zh": "🏆 创新传承 ✨"
+    },
+    {
+     "source": "youtube",
+     "id": "oPTreb5tbFk",
+     "title": "CES2026 OPENING",
+     "len": "1:14",
+     "views": 12,
+     "days": 300,
+     "title_zh": "CES2026 开幕"
+    },
+    {
+     "source": "youtube",
+     "id": "qO6HjyHl_gY",
+     "title": "Công nghệ HI-NANO của Hisense đảm bảo mỗi hơi thở bạn hít vào đều trong lành và an tâm tuyệt đối",
+     "len": "1:08",
+     "views": 110,
+     "days": 300,
+     "title_zh": "海信 HI-NANO 技术，让每一次呼吸都清新且绝对安心"
+    },
+    {
+     "source": "youtube",
+     "id": "rhbSL30mCwM",
+     "title": "Chức năng Fresh Air của Điều hòa Hisense chính là cứu tinh dành cho bạn!",
+     "len": "1:06",
+     "views": 57,
+     "days": 300,
+     "title_zh": "海信空调 Fresh Air 功能正是你的救星！"
+    },
+    {
+     "source": "youtube",
+     "id": "yXzmqPaFQyI",
+     "title": "Tại sao ngày càng nhiều người chọn Hisense khi mua điều hòa?",
+     "len": "0:55",
+     "views": 55,
+     "days": 300,
+     "title_zh": "为什么越来越多人买空调选海信？"
+    }
+   ]
+  }
+ ]
+}
