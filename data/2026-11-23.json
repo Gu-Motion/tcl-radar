@@ -1,13 +1,54 @@
 {
  "week": "2026-11-23",
  "sources": [
-  "youtube"
+  "youtube",
+  "facebook"
  ],
  "notes": [
   {
    "title": {
-    "vi": "Tuần lặng: không hãng nào đăng video mới",
-    "zh": "平静的一周：五家均无新视频"
+    "vi": "Facebook mới là chiến trường chính: tuần này 53 bài, YouTube 0 video",
+    "zh": "Facebook 才是主战场：本周 53 条帖子，YouTube 0 条视频"
+   },
+   "body": {
+    "vi": "Trong 7 ngày qua, 5 fanpage đăng tổng cộng 53 bài, trong khi cả 5 kênh YouTube không có video mới. Nhịp đăng: Samsung 15 bài chỉ trong 3 ngày (khoảng 5 bài/ngày), LG 15 bài trong 4 ngày, Toshiba 12 bài trong 6 ngày, AQUA 7 bài, Hisense 4 bài. Lưu ý: tương tác tự nhiên rất thấp ở cả 5 hãng (trung vị LG 7, Hisense 6, AQUA 9, Toshiba 23, Samsung 39 tương tác/bài), nên một bài vượt vài trăm tương tác gần như chắc chắn có chạy quảng cáo.",
+    "zh": "过去 7 天，五个粉丝页共发布 53 条帖子，而五个 YouTube 频道均无新视频。发帖节奏：三星 3 天内 15 条（约每天 5 条），LG 4 天 15 条，东芝 6 天 12 条，AQUA 7 条，海信 4 条。注意：五家的自然互动都很低（中位数 LG 7、海信 6、AQUA 9、东芝 23、三星 39 次互动/帖），因此单帖超过几百次互动几乎可以肯定有广告投放。"
+   }
+  },
+  {
+   "title": {
+    "vi": "Samsung dồn lực cho Galaxy Festival; livestream Black Friday gần như không ai tương tác",
+    "zh": "三星集中火力推 Galaxy Festival；黑五直播几乎无人互动"
+   },
+   "body": {
+    "vi": "6 bài của Samsung có dấu hiệu đẩy media, đều từ 1.600 đến 4.100 tương tác so với trung vị 39: 5 bài về sự kiện Welcome to Galaxy Festival (Galaxy Concert, Galaxy Studio) và 1 bài \"Samsung AI hiểu ý, vị Việt đúng ý\" nhân Ngày Văn hóa 24/11. Ngược lại, 5 buổi livestream bán hàng Black Friday chỉ được 14–48 tương tác mỗi buổi. Samsung đang dùng chủ đề \"Hiểu trọn nếp nhà Việt\" (áo dài, thổ cẩm, bún chả, bún bò) để gắn AI với văn hóa Việt.",
+    "zh": "三星有 6 条帖子出现投放迹象，互动 1,600 至 4,100 次，而中位数仅 39：其中 5 条关于 Welcome to Galaxy Festival 活动（Galaxy 演唱会、Galaxy Studio），1 条为配合 11/24 文化日的「三星 AI 懂你，越味称心」。相反，5 场黑五带货直播每场仅 14–48 次互动。三星正以「懂越南家庭」为主题（奥黛、织锦、烤肉米粉、牛肉粉），把 AI 与越南文化绑定。"
+   }
+  },
+  {
+   "title": {
+    "vi": "AQUA đẩy mạnh ra mắt tháp giặt sấy Color AI; Toshiba hé lộ \"Nhà hàng Thương Gia\"",
+    "zh": "AQUA 大力推广 Color AI 洗烘塔；东芝预热「商务舱餐厅」"
+   },
+   "body": {
+    "vi": "AQUA: bài ra mắt tháp giặt sấy AQUA Color AI (12/11) đạt 10.885 tương tác, gấp hơn 1.000 lần trung vị 9 của trang, và 6 ngày sau còn một bài nhắc lại sản phẩm này (877 tương tác). Bài làm đá tự động (1.330) và máy nước nóng men Titanium (1.755) cũng vượt ngưỡng. Toshiba: không bài nào có dấu hiệu chạy quảng cáo (cao nhất 402, là bài trao giải Brand Day có 199 lượt chia sẻ). Hôm nay Toshiba đăng teaser \"Lần đầu tiên Toshiba mở nhà hàng\" kèm #ComingSoon, tiếp nối chủ đề \"Gia dụng Thương Gia\". Đây có thể là chiến dịch mới cần theo dõi tuần sau. Loạt OriginTaste/Color/Fresh trên Facebook khớp với loạt Origin trên YouTube.",
+    "zh": "AQUA：AQUA Color AI 洗烘塔发布帖（11/12）获得 10,885 次互动，是该页中位数 9 的一千多倍，6 天后又发了一条该产品的后续帖（877 次）。自动制冰（1,330）和钛金搪瓷热水器（1,755）也超过阈值。东芝：没有帖子出现投放迹象（最高 402，为品牌日颁奖帖，199 次分享）。东芝今天发布「东芝首次开餐厅」预热帖并带 #ComingSoon，延续「商务舱家电」主题，可能是新战役，下周需关注。Facebook 上的 OriginTaste/Color/Fresh 系列与 YouTube 上的 Origin 系列一致。"
+   }
+  },
+  {
+   "title": {
+    "vi": "LG đăng dày nhưng gần như không có tương tác; Hisense gần như im lặng trên cả hai kênh",
+    "zh": "LG 发帖密集但几乎无互动；海信在两个平台都几乎沉默"
+   },
+   "body": {
+    "vi": "LG đăng 15 bài trong 4 ngày, nhưng trung vị chỉ 7 tương tác/bài. Chỉ có bài Another Saigon by LG (252) và một reel sự kiện \"AI thấu cảm\" (95) nổi lên. Nội dung xoay quanh Ngày Đàn ông 19/11 (3 bài), chương trình review nhận voucher 150K cho LG Member, và không gian trải nghiệm Another Saigon. Hisense chỉ có 4 bài trong 7 ngày về TV RGB MiniLED, bài cao nhất 21 tương tác. Hisense có hoạt động trên Facebook (YouTube đã im 2 tháng), nhưng không có dấu hiệu đầu tư.",
+    "zh": "LG 4 天发了 15 条帖子，但中位数仅 7 次互动/帖。只有 Another Saigon by LG（252）和「共情 AI」活动短视频（95）较突出。内容围绕 11/19 男士节（3 条）、LG 会员评价领 15 万越盾代金券活动，以及 Another Saigon 体验空间。海信 7 天仅 4 条帖子，主推 RGB MiniLED 电视，最高 21 次互动。海信在 Facebook 上有动态（YouTube 已沉寂 2 个月），但没有投入迹象。"
+   }
+  },
+  {
+   "title": {
+    "vi": "YouTube lặng: không hãng nào đăng video mới",
+    "zh": "YouTube 平静：五家均无新视频"
    },
    "body": {
     "vi": "Từ mốc 20/11 đến 23/11 (chỉ 3 ngày), cả 5 kênh không có video mới nào. Video mới nhất mỗi kênh vẫn là video đã có tuần trước: Samsung 3 ngày, LG 5 ngày, Toshiba và AQUA 3 tuần, Hisense 2 tháng. Lượt xem các video thường chỉ nhích vài chục lượt (ví dụ Samsung Health tim mạch 169 → 284, LG thiết kế thương mại 53 → 79). Khoảng cách 3 ngày còn ngắn, nên tuần sau mới đánh giá được nhịp đăng.",
@@ -40,8 +81,8 @@
     "zh": "仍无品牌开启春节战役"
    },
    "body": {
-    "vi": "Không có video, cụm từ hay hashtag nào liên quan Tết trên cả 5 kênh, và không xuất hiện cụm từ hay hashtag mới nào lặp lại. Hisense vẫn im lặng: video mới nhất đã 2 tháng, cao nhất 19 lượt. Khoảng trống Tết cho TCL vẫn còn nguyên.",
-    "zh": "五个频道均无任何春节相关视频、用语或话题标签，也未出现新的重复用语或标签。海信仍然沉默：最新视频已发布 2 个月，最高仅 19 次播放。留给 TCL 的春节空档依然存在。"
+    "vi": "Không có video, cụm từ hay hashtag nào liên quan Tết trên cả 5 kênh, và không xuất hiện cụm từ hay hashtag mới nào lặp lại. Hisense vẫn im lặng: video mới nhất đã 2 tháng, cao nhất 19 lượt. Khoảng trống Tết cho TCL vẫn còn nguyên. Trên Facebook cũng vậy: trong 72 bài mới nhất của 5 fanpage chưa có bài nào về Tết; chủ đề chính vẫn là Black Friday, 20/11, Ngày Đàn ông 19/11 và Ngày Văn hóa 24/11.",
+    "zh": "五个频道均无任何春节相关视频、用语或话题标签，也未出现新的重复用语或标签。海信仍然沉默：最新视频已发布 2 个月，最高仅 19 次播放。留给 TCL 的春节空档依然存在。 Facebook 上同样如此：五个粉丝页最新的 72 条帖子中没有任何春节内容；主要话题仍是黑五、11/20 教师节、11/19 男士节和 11/24 越南文化日。"
    }
   }
  ],
@@ -53,6 +94,11 @@
      "name": "Samsung Vietnam",
      "name_zh": "三星越南",
      "url": "https://www.youtube.com/user/samsungvietnam/videos"
+    },
+    "facebook": {
+     "name": "Samsung Vietnam",
+     "name_zh": "三星越南",
+     "url": "https://www.facebook.com/SamsungVietnam"
     }
    },
    "items": [
@@ -181,6 +227,201 @@
      "views": 612,
      "days": 30,
      "title_zh": "在 Creative Studio 上用 S Pen 创作 | Galaxy AI | Galaxy Tab S12 系列 | 三星"
+    },
+    {
+     "source": "facebook",
+     "id": "1154880433629560",
+     "url": "https://www.facebook.com/SamsungVietnam/videos/1154880433629560/",
+     "type": "video",
+     "title": "ĐẠI TIỆC CÔNG NGHỆ ĐỔ BỘ LIVESTREAM – SĂN DEAL HẾT Ý (Galaxy, TV, gia dụng)",
+     "title_zh": "科技盛宴登陆直播间——尽情抢优惠（Galaxy、电视、家电）",
+     "views": 20,
+     "reactions": 13,
+     "comments": 7,
+     "shares": 0,
+     "days": 0
+    },
+    {
+     "source": "facebook",
+     "id": "1282069104174073",
+     "url": "https://www.facebook.com/photo/?fbid=1282069104174073",
+     "type": "post",
+     "title": "SAMSUNG AI HIỂU Ý, CHĂM VẢI ĐÚNG Ý — giặt áo dài, thổ cẩm, trang phục truyền thống",
+     "title_zh": "三星 AI 懂你，护衣称心——奥黛、织锦等传统服饰洗护",
+     "views": 17,
+     "reactions": 15,
+     "comments": 2,
+     "shares": 0,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0KBXxqDsqeEo1ouq2LyBzu2gfB9uPzN6Ydcg2g1AWz1mJoyiYcdTHgnEJGtnhBnLLl",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid0KBXxqDsqeEo1ouq2LyBzu2gfB9uPzN6Ydcg2g1AWz1mJoyiYcdTHgnEJGtnhBnLLl",
+     "type": "post",
+     "title": "“Quản gia” SmartThings cá nhân hóa trải nghiệm tại KiN Wander Tân Phong",
+     "title_zh": "SmartThings「管家」在 KiN Wander Tân Phong 打造个性化体验",
+     "views": 21,
+     "reactions": 20,
+     "comments": 0,
+     "shares": 1,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "2137289514328924",
+     "url": "https://www.facebook.com/reel/2137289514328924/",
+     "type": "reel",
+     "title": "WELCOME TO GALAXY FESTIVAL – GALAXY CONCERT: không khí náo nhiệt trước giờ G (Day 2)",
+     "title_zh": "Welcome To Galaxy Festival——Galaxy 演唱会开场前的热烈气氛（第 2 天）",
+     "views": 3328,
+     "reactions": 3300,
+     "comments": 15,
+     "shares": 13,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "1479580344263608",
+     "url": "https://www.facebook.com/reel/1479580344263608/",
+     "type": "reel",
+     "title": "Welcome To Galaxy Festival DAY 1 siêu “nhiệt” với loạt hoạt động cực WOW",
+     "title_zh": "Welcome To Galaxy Festival 第 1 天超燃，精彩活动不断",
+     "views": 4127,
+     "reactions": 4100,
+     "comments": 14,
+     "shares": 13,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0U2iL4o1utgKzQ4kivpsZg9fRV67AYhYygtoNCvXUR8fmX1emXaWVn38ZZanfhLC6l",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid0U2iL4o1utgKzQ4kivpsZg9fRV67AYhYygtoNCvXUR8fmX1emXaWVn38ZZanfhLC6l",
+     "type": "post",
+     "title": "GALAXY FESTIVAL - GALAXY STUDIO: bỏ túi tips hay cùng chuyên gia tại Tech Workshop",
+     "title_zh": "Galaxy Festival——Galaxy Studio：技术工作坊专家实用技巧",
+     "views": 1932,
+     "reactions": 1900,
+     "comments": 23,
+     "shares": 9,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "1491241659595297",
+     "url": "https://www.facebook.com/SamsungVietnam/videos/1491241659595297/",
+     "type": "video",
+     "title": "CÔNG NGHỆ BỨT PHÁ – BLACK SALE CỰC ĐÃ TẠI LIVESTREAM",
+     "title_zh": "突破科技——直播间黑五大促",
+     "views": 48,
+     "reactions": 30,
+     "comments": 16,
+     "shares": 2,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "1648917420347393",
+     "url": "https://www.facebook.com/reel/1648917420347393/",
+     "type": "reel",
+     "title": "Samsung Wallet trên Galaxy — giao dịch, giấy tờ được bảo vệ bởi Samsung Knox",
+     "title_zh": "Galaxy 上的 Samsung Wallet——交易与证件由 Samsung Knox 守护",
+     "views": 30,
+     "reactions": 24,
+     "comments": 0,
+     "shares": 6,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02qxgWgosjLmonHLSd2oC2RmrHHnNrSNGf1Z3Hc6ono3qhBik7q4iNFmizDktm2K3kl",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid02qxgWgosjLmonHLSd2oC2RmrHHnNrSNGf1Z3Hc6ono3qhBik7q4iNFmizDktm2K3kl",
+     "type": "post",
+     "title": "NGAY LÚC NÀY TẠI GALAXY FESTIVAL - GALAXY STUDIO: tỷ trải nghiệm WOW đang chờ bạn",
+     "title_zh": "此刻 Galaxy Festival——Galaxy Studio：无数惊喜体验等你来",
+     "views": 1866,
+     "reactions": 1800,
+     "comments": 40,
+     "shares": 26,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "1439850601138707",
+     "url": "https://www.facebook.com/SamsungVietnam/videos/1439850601138707/",
+     "type": "video",
+     "title": "NHÀ THÊM TIỆN NGHI - SẮM ƯU ĐÃI BLACK FRIDAY gia dụng Samsung",
+     "title_zh": "家更便捷——三星家电黑五优惠",
+     "views": 14,
+     "reactions": 3,
+     "comments": 11,
+     "shares": 0,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "1712752307120620",
+     "url": "https://www.facebook.com/SamsungVietnam/videos/1712752307120620/",
+     "type": "video",
+     "title": "So tài công nghệ cùng 2 host: đâu là màn nâng cấp đáng mong chờ nhất?",
+     "title_zh": "两位主持人科技比拼：哪项升级最值得期待？",
+     "views": 19,
+     "reactions": 13,
+     "comments": 6,
+     "shares": 0,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0gSxHfPVaVLtE6NnSNT962B9dvUN9vXzJVXbq3rNm4bjG62GeQN5nkPKZqYssKqQGl",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid0gSxHfPVaVLtE6NnSNT962B9dvUN9vXzJVXbq3rNm4bjG62GeQN5nkPKZqYssKqQGl",
+     "type": "post",
+     "title": "KHÁM PHÁ NGÀN NĂM DI SẢN VĂN HÓA VIỆT CÙNG SAMSUNG AI TV — chào mừng Ngày Văn hóa Việt Nam 24/11",
+     "title_zh": "与三星 AI 电视探索千年越南文化遗产——迎接 11/24 越南文化日",
+     "views": 33,
+     "reactions": 28,
+     "comments": 1,
+     "shares": 4,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0331JsetnnztCRAHs6bUTpvvzxZq5SoASNUucLVGf7MhAjXvV3pa5uHv2ySaLj2zsjl",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid0331JsetnnztCRAHs6bUTpvvzxZq5SoASNUucLVGf7MhAjXvV3pa5uHv2ySaLj2zsjl",
+     "type": "post",
+     "title": "GALAXY FESTIVAL - GALAXY CONCERT: bỏ túi trọn bộ bí kíp, sẵn sàng nhập hội",
+     "title_zh": "Galaxy Festival——Galaxy 演唱会：完整攻略，准备入场",
+     "views": 2573,
+     "reactions": 2500,
+     "comments": 32,
+     "shares": 41,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "1446307097656449",
+     "url": "https://www.facebook.com/SamsungVietnam/videos/1446307097656449/",
+     "type": "video",
+     "title": "CÔNG NGHỆ ĐỈNH CAO – BLACK SALE CỰC WOW TẠI SAMSUNG LIVE SHOP",
+     "title_zh": "顶尖科技——Samsung Live Shop 黑五超值大促",
+     "views": 39,
+     "reactions": 30,
+     "comments": 8,
+     "shares": 1,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid03CEPSNRUrpTJqa5gHmkWce3hNoMaTngXM2tdswLWP4Vv4e6xxkGt49odZrjtNenPl",
+     "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid03CEPSNRUrpTJqa5gHmkWce3hNoMaTngXM2tdswLWP4Vv4e6xxkGt49odZrjtNenPl",
+     "type": "post",
+     "title": "SAMSUNG AI HIỂU Ý, VỊ VIỆT ĐÚNG Ý — bún chả, bún bò… mừng Ngày Văn hóa 24/11",
+     "title_zh": "三星 AI 懂你，越味称心——烤肉米粉、牛肉粉……迎 11/24 文化日",
+     "views": 1624,
+     "reactions": 1600,
+     "comments": 22,
+     "shares": 2,
+     "days": 3
     }
    ]
   },
@@ -191,6 +432,11 @@
      "name": "Toshiba Lifestyle Vietnam",
      "name_zh": "东芝生活越南",
      "url": "https://www.youtube.com/@ToshibalifestyleVietnam/videos"
+    },
+    "facebook": {
+     "name": "Toshiba Lifestyle Vietnam",
+     "name_zh": "东芝生活越南",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam"
     }
    },
    "items": [
@@ -319,6 +565,162 @@
      "views": 975,
      "days": 30,
      "title_zh": "T40 洗烘塔（2026 新品）— 设计精巧，体验优化"
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02BnZDhvNwaKrjerDYeMpFwfm2xj5hrErmM4DpF1Fgf9GeY7hHzmC9GVv4p4u5Zx1zl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid02BnZDhvNwaKrjerDYeMpFwfm2xj5hrErmM4DpF1Fgf9GeY7hHzmC9GVv4p4u5Zx1zl",
+     "type": "post",
+     "title": "LẦN ĐẦU TIÊN TOSHIBA MỞ “NHÀ HÀNG”! Trải nghiệm ẩm thực đẳng cấp “thương gia” mang về tận nhà",
+     "title_zh": "东芝首次开「餐厅」！把「商务舱」级美食体验带回家",
+     "views": 21,
+     "reactions": 16,
+     "comments": 1,
+     "shares": 4,
+     "days": 0
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0afTeFZJphTxJiuxY5PD9rHmXP46uBQRgV5B8PfDcuknwiCRx4EBYf9Lz6Ypi2Kcrl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid0afTeFZJphTxJiuxY5PD9rHmXP46uBQRgV5B8PfDcuknwiCRx4EBYf9Lz6Ypi2Kcrl",
+     "type": "post",
+     "title": "MÁY GIẶT CỬA TRƯỚC T31 (MỚI) - Khi công nghệ giặt chiều lòng gia đình mình",
+     "title_zh": "全新 T31 滚筒洗衣机——懂你全家的洗护科技",
+     "views": 17,
+     "reactions": 11,
+     "comments": 2,
+     "shares": 4,
+     "days": 0
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0p8rkDeSHBYyXcv2JewNzZ1qkwsCXzqq5hNNnZ4xhKLi4Dx9UasXnXuFKoQBguFyfl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid0p8rkDeSHBYyXcv2JewNzZ1qkwsCXzqq5hNNnZ4xhKLi4Dx9UasXnXuFKoQBguFyfl",
+     "type": "post",
+     "title": "Trọn vị hạt gạo, tròn đầy từng bữa cơm — công nghệ OriginTaste",
+     "title_zh": "粒粒饱满，餐餐圆满——OriginTaste 技术",
+     "views": 16,
+     "reactions": 13,
+     "comments": 0,
+     "shares": 3,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02z3dWT4hym5bfuxaa78AoYTbtn3s1kposho79MKPJihkFx9Dr8jayvnVFDU7YeFXXl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid02z3dWT4hym5bfuxaa78AoYTbtn3s1kposho79MKPJihkFx9Dr8jayvnVFDU7YeFXXl",
+     "type": "post",
+     "title": "Giao mùa nhiệt độ ban đêm thất thường: làm sao để bé ngon giấc?",
+     "title_zh": "换季夜间温差大：如何让宝宝睡得更香？",
+     "views": 15,
+     "reactions": 12,
+     "comments": 1,
+     "shares": 2,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "1913760233403256",
+     "url": "https://www.facebook.com/reel/1913760233403256/",
+     "type": "reel",
+     "title": "“CHIÊN” GIA NHÌN THẤU, ĐÚNG LÚC LẬT KÈO — Nồi chiên không dầu có cửa sổ nhìn",
+     "title_zh": "「炸」家看得透，翻面正当时——可视空气炸锅",
+     "views": 41,
+     "reactions": 31,
+     "comments": 1,
+     "shares": 9,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02n4qR3h5oUWvZ5h5MPzFDkFFChymWsCvw6ETqRTux9MHpz2xTS27QhwXvrZvAMmhil",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid02n4qR3h5oUWvZ5h5MPzFDkFFChymWsCvw6ETqRTux9MHpz2xTS27QhwXvrZvAMmhil",
+     "type": "post",
+     "title": "Giữ màu tươi mới, nâng niu từng sợi vải — công nghệ OriginColor",
+     "title_zh": "护色如新，呵护每根纤维——OriginColor 技术",
+     "views": 24,
+     "reactions": 20,
+     "comments": 0,
+     "shares": 4,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "1121611257422225",
+     "url": "https://www.facebook.com/reel/1121611257422225/",
+     "type": "reel",
+     "title": "MÁY SẤY BƠM NHIỆT T21 - Sấy tinh gọn, trọn thảnh thơi",
+     "title_zh": "T21 热泵干衣机——干得利落，过得轻松",
+     "views": 37,
+     "reactions": 25,
+     "comments": 0,
+     "shares": 12,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0Sk1kEAn4tWGznW8ReSGSUJTGKecdd8rkt3wjcwhtRDqejJ82bG7xgZ7yCNXhcE26l",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid0Sk1kEAn4tWGznW8ReSGSUJTGKecdd8rkt3wjcwhtRDqejJ82bG7xgZ7yCNXhcE26l",
+     "type": "post",
+     "title": "XAY HẠT DỄ DÀNG, THÀNH THƠI THƯỞNG THỨC — máy xay Toshiba BL-70PR1NV",
+     "title_zh": "轻松打坚果，悠然享美味——东芝 BL-70PR1NV 料理机",
+     "views": 17,
+     "reactions": 14,
+     "comments": 0,
+     "shares": 3,
+     "days": 5
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid09e4Jn6t2fjw9QachuZoeuwfNcnabGmcQz2bR8pLEKG88kpzuqMGqRcBf3BVpZUKol",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid09e4Jn6t2fjw9QachuZoeuwfNcnabGmcQz2bR8pLEKG88kpzuqMGqRcBf3BVpZUKol",
+     "type": "post",
+     "title": "MÁY GIẶT CỬA TRƯỚC T33 - “Bạn đồng hành” nâng niu nếp áo, giữ trọn nếp nhà",
+     "title_zh": "T33 滚筒洗衣机——呵护衣物，守护家的温度",
+     "views": 45,
+     "reactions": 24,
+     "comments": 0,
+     "shares": 21,
+     "days": 5
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02bqAn7zLvra1CFWBsk87EqcvR3jVRMS3kRSH9qoGuQxj3UiWzuJBM9ZsMiBFh7mvHl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid02bqAn7zLvra1CFWBsk87EqcvR3jVRMS3kRSH9qoGuQxj3UiWzuJBM9ZsMiBFh7mvHl",
+     "type": "post",
+     "title": "Tươi ngon đa dạng, bảo toàn trọn vị tự nhiên — công nghệ OriginFresh",
+     "title_zh": "新鲜多样，锁住天然原味——OriginFresh 技术",
+     "views": 21,
+     "reactions": 17,
+     "comments": 0,
+     "shares": 4,
+     "days": 5
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid034ovzwpBnXwa6L2owPYMQwzwxAvWYFvWaHmj8QSqEggsLPaDZyS2bXtGH8PG5nPyhl",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid034ovzwpBnXwa6L2owPYMQwzwxAvWYFvWaHmj8QSqEggsLPaDZyS2bXtGH8PG5nPyhl",
+     "type": "post",
+     "title": "BẾP NHÀ “NỞ HOA” ĐÓN 20/11 — gợi ý món ăn tặng thầy cô với JAPANDi Series",
+     "title_zh": "厨房「开花」迎 11/20 教师节——JAPANDi 系列菜谱推荐",
+     "views": 25,
+     "reactions": 20,
+     "comments": 0,
+     "shares": 5,
+     "days": 6
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02XMFSUsiRBHzRp1Ps6BVXxxeVj6tiGzeu6WGCVT1R3NRKCCyPmYSTorGJSU5xoceql",
+     "url": "https://www.facebook.com/ToshibaLifestyleVietnam/posts/pfbid02XMFSUsiRBHzRp1Ps6BVXxxeVj6tiGzeu6WGCVT1R3NRKCCyPmYSTorGJSU5xoceql",
+     "type": "post",
+     "title": "Vinh danh chủ nhân giải thưởng đặc biệt Toshiba Brand Day 2026 “Sắm thả ga – Trúng quà lớn”",
+     "title_zh": "东芝品牌日 2026「尽情购·赢大奖」特别大奖得主颁奖时刻",
+     "views": 402,
+     "reactions": 172,
+     "comments": 31,
+     "shares": 199,
+     "days": 6
     }
    ]
   },
@@ -329,6 +731,11 @@
      "name": "LG Vietnam",
      "name_zh": "LG 越南",
      "url": "https://www.youtube.com/@LGVietnam/videos"
+    },
+    "facebook": {
+     "name": "LG Vietnam",
+     "name_zh": "LG 越南",
+     "url": "https://www.facebook.com/LGEVietnam"
     }
    },
    "items": [
@@ -457,6 +864,201 @@
      "views": 256,
      "days": 60,
      "title_zh": "陪伴每一段生活节奏的朋友"
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02kXcPJ7TvzezBt7buoy66sp5FAxamPSxff82ss1GHM5zGHHeJ4HxZgekTkQGZhMuZl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02kXcPJ7TvzezBt7buoy66sp5FAxamPSxff82ss1GHM5zGHHeJ4HxZgekTkQGZhMuZl",
+     "type": "post",
+     "title": "THINQ “ĐỂ MẮT”, VẮNG NHÀ CHẲNG LO — giám sát, điều khiển thiết bị từ xa",
+     "title_zh": "ThinQ 帮你「看家」，出门无忧——远程监控家电",
+     "views": 4,
+     "reactions": 2,
+     "comments": 1,
+     "shares": 1,
+     "days": 0
+    },
+    {
+     "source": "facebook",
+     "id": "1539572904891111",
+     "url": "https://www.facebook.com/reel/1539572904891111/",
+     "type": "reel",
+     "title": "Hướng dẫn đăng ký LG Member trong 1 phút để gửi review nhận voucher UrBox tới 150.000đ",
+     "title_zh": "1 分钟注册 LG 会员，提交评价领取最高 15 万越盾 UrBox 代金券",
+     "views": 2,
+     "reactions": 2,
+     "comments": 0,
+     "shares": 0,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02BMYiUkBepQkorBXJJTYoF1RtQU2jnMibTNsxi8Ezeh2itrzHfRHB66Zu3U71wfcHl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02BMYiUkBepQkorBXJJTYoF1RtQU2jnMibTNsxi8Ezeh2itrzHfRHB66Zu3U71wfcHl",
+     "type": "post",
+     "title": "CHĂM CHÚT NÉT ĐẸP TRUYỀN THỐNG — giặt trang phục chất liệu tinh xảo",
+     "title_zh": "呵护传统之美——精致面料衣物洗护",
+     "views": 2,
+     "reactions": 1,
+     "comments": 1,
+     "shares": 0,
+     "days": 1
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02zUkNVgJ9Hds9dBhAzxxGPeXhC1BrTmvdzeDGkaqKmBbKNj7uGEde9AxUa1vY3awNl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02zUkNVgJ9Hds9dBhAzxxGPeXhC1BrTmvdzeDGkaqKmBbKNj7uGEde9AxUa1vY3awNl",
+     "type": "post",
+     "title": "BBQ CÓ HỘI – CUỘC VUI PHẢI CÓ LOA! — LG xboom Stage501",
+     "title_zh": "烧烤聚会少不了音箱！——LG xboom Stage501",
+     "views": 4,
+     "reactions": 2,
+     "comments": 2,
+     "shares": 0,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid032c3fgVPhR7ewummUT76oxbXuQoA4q4emG8r3t5H1hLRwBfqUZRWcC8dcGaqZzocRl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid032c3fgVPhR7ewummUT76oxbXuQoA4q4emG8r3t5H1hLRwBfqUZRWcC8dcGaqZzocRl",
+     "type": "post",
+     "title": "Chạm trọn sắc Thu Hàn Quốc giữa Sài Gòn tại Another Saigon by LG",
+     "title_zh": "在西贡 Another Saigon by LG 感受韩国秋色",
+     "views": 5,
+     "reactions": 3,
+     "comments": 1,
+     "shares": 1,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0331dsoW47nKajoMAdWoa384zob6ZCDTzVgTE8EHGoKWCPLX3w8jqMPBiQwMNAxwifl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid0331dsoW47nKajoMAdWoa384zob6ZCDTzVgTE8EHGoKWCPLX3w8jqMPBiQwMNAxwifl",
+     "type": "post",
+     "title": "MÀN HÌNH CỰC ĐẠI, BÙNG NỔ TỪNG PHA BỨT TỐC — xem F1 trên LG QNED evo AI",
+     "title_zh": "超大屏幕，每次加速都燃爆——用 LG QNED evo AI 看 F1",
+     "views": 7,
+     "reactions": 6,
+     "comments": 0,
+     "shares": 1,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02DRgKZgPk2ZdirF58yGF6bdRtZdyTgCdNCMrzrcXuXuou8FavUQyTzJRscjdZ8ihnl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02DRgKZgPk2ZdirF58yGF6bdRtZdyTgCdNCMrzrcXuXuou8FavUQyTzJRscjdZ8ihnl",
+     "type": "post",
+     "title": "GIẢM LẠNH & BỤI — LG DUALCOOL AI Air 2 chiều cho miền Bắc cuối năm",
+     "title_zh": "驱寒除尘——LG DUALCOOL AI Air 冷暖空调应对北方年末",
+     "views": 2,
+     "reactions": 2,
+     "comments": 0,
+     "shares": 0,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02MvYUj5sXvDAA8upGoRsvz1QPSnxdwoUANavAmqCdKU2oAKG9dbpTcE7Xv6zmH4Zvl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02MvYUj5sXvDAA8upGoRsvz1QPSnxdwoUANavAmqCdKU2oAKG9dbpTcE7Xv6zmH4Zvl",
+     "type": "post",
+     "title": "BEST-MEN CHỌN BEST CARE — dịch vụ vệ sinh, bảo dưỡng thiết bị LG",
+     "title_zh": "好男人选 Best Care——LG 家电清洁保养服务",
+     "views": 8,
+     "reactions": 8,
+     "comments": 0,
+     "shares": 0,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02Ye4LGU4wGboX4cowAQNAkevaf84ZuursbMkeU83sFFFCCr2HB1mPiKqn4teBmE9Dl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02Ye4LGU4wGboX4cowAQNAkevaf84ZuursbMkeU83sFFFCCr2HB1mPiKqn4teBmE9Dl",
+     "type": "post",
+     "title": "XỎ BÔNG MỀM, OUTFIT THÊM PHẦN SLAY TẠI ANOTHER SAIGON BY LG",
+     "title_zh": "柔软毛绒加持，穿搭更出彩——Another Saigon by LG",
+     "views": 252,
+     "reactions": 247,
+     "comments": 3,
+     "shares": 2,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "2040171783335188",
+     "url": "https://www.facebook.com/reel/2040171783335188/",
+     "type": "reel",
+     "title": "Dấu ấn kết nối tại sự kiện “AI thấu cảm, chạm đỉnh vươn tầm”",
+     "title_zh": "「共情 AI，登峰致远」活动的连接印记",
+     "views": 95,
+     "reactions": 92,
+     "comments": 1,
+     "shares": 2,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "1198397489416978",
+     "url": "https://www.facebook.com/reel/1198397489416978/",
+     "type": "reel",
+     "title": "NHANH NHƯ CHEF: Rau củ hấp… dẫn kiểu Hàn",
+     "title_zh": "快如大厨：韩式蒸蔬菜",
+     "views": 7,
+     "reactions": 7,
+     "comments": 0,
+     "shares": 0,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0jdjjNJWFHnVvj1sakDkGc7yXcysXf5Ngk2bFDhbFdvU2hNojBVUd5ES2DeXda8aYl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid0jdjjNJWFHnVvj1sakDkGc7yXcysXf5Ngk2bFDhbFdvU2hNojBVUd5ES2DeXda8aYl",
+     "type": "post",
+     "title": "TRỌN BỘ CHĂM SÓC CHO CHUẨN SỐNG TIỆN NGHI cùng LG",
+     "title_zh": "全套呵护，成就便捷生活——LG",
+     "views": 41,
+     "reactions": 41,
+     "comments": 0,
+     "shares": 0,
+     "days": 3
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0gQmaa6kz5nNNeaRdCdgkpjMSqm9fc25uqm8iZ8bVQ4PAvMbXmXQp4VNr1wYRsV1Tl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid0gQmaa6kz5nNNeaRdCdgkpjMSqm9fc25uqm8iZ8bVQ4PAvMbXmXQp4VNr1wYRsV1Tl",
+     "type": "post",
+     "title": "SỞ HỮU CÀNG NHIỀU THIẾT BỊ LG - RINH CÀNG NHIỀU VOUCHER 150K",
+     "title_zh": "拥有越多 LG 设备，领取越多 15 万越盾代金券",
+     "views": 10,
+     "reactions": 7,
+     "comments": 2,
+     "shares": 1,
+     "days": 4
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02Kbzm7Q3CAaCkG6tpAkJeNooMrJty39iU5edCSKtokfXiFPVzVsmp8xWfNKPhVsVQl",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02Kbzm7Q3CAaCkG6tpAkJeNooMrJty39iU5edCSKtokfXiFPVzVsmp8xWfNKPhVsVQl",
+     "type": "post",
+     "title": "MỪNG NGÀY PHÁI MẠNH, DÀNH TRỌN LỜI KHEN — đàn ông vào bếp",
+     "title_zh": "男士节快乐，满满夸奖——男人下厨",
+     "views": 26,
+     "reactions": 23,
+     "comments": 2,
+     "shares": 1,
+     "days": 4
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02MS9bCPe8YLTGfGi6Ci4fmeWu3dJHJrcYsZ3BnbJAQ2q5SZvMYSehwAPxjNH5RGsml",
+     "url": "https://www.facebook.com/LGEVietnam/posts/pfbid02MS9bCPe8YLTGfGi6Ci4fmeWu3dJHJrcYsZ3BnbJAQ2q5SZvMYSehwAPxjNH5RGsml",
+     "type": "post",
+     "title": "Happy Men’s Day! Ngăn chuyển đổi đa năng của tủ lạnh LG",
+     "title_zh": "男士节快乐！LG 冰箱多功能变温室",
+     "views": 18,
+     "reactions": 11,
+     "comments": 6,
+     "shares": 1,
+     "days": 4
     }
    ]
   },
@@ -467,6 +1069,11 @@
      "name": "AQUA Việt Nam",
      "name_zh": "AQUA 越南",
      "url": "https://www.youtube.com/@Aquavietnam/videos"
+    },
+    "facebook": {
+     "name": "AQUA Việt Nam",
+     "name_zh": "AQUA 越南",
+     "url": "https://www.facebook.com/aquavietnam"
     }
    },
    "items": [
@@ -595,6 +1202,201 @@
      "views": 431,
      "days": 365,
      "title_zh": "AQUA 服务 — 陪伴带来安心"
+    },
+    {
+     "source": "facebook",
+     "id": "1125381423658653",
+     "url": "https://www.facebook.com/reel/1125381423658653/",
+     "type": "reel",
+     "title": "Không khí ô nhiễm đâu phải lúc nào cũng nhìn thấy — bụi mịn, khói bếp trong nhà",
+     "title_zh": "空气污染并不总是肉眼可见——室内细颗粒物与油烟",
+     "views": 4,
+     "reactions": 2,
+     "comments": 1,
+     "shares": 1,
+     "days": 2
+    },
+    {
+     "source": "facebook",
+     "id": "1180208044511344",
+     "url": "https://www.facebook.com/reel/1180208044511344/",
+     "type": "reel",
+     "title": "Nhà đóng kín cửa nhưng sáng nào lau dọn cũng ra lớp bụi mịn?",
+     "title_zh": "门窗紧闭，为何每天早上擦拭仍有一层细尘？",
+     "views": 4,
+     "reactions": 3,
+     "comments": 1,
+     "shares": 0,
+     "days": 4
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02TkYnWLn1DvN56a5dTiPPM9t4Dhs7Aq2gNSQVWbA37GzdcDe36QufbdrY8ZhpCvd7l",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02TkYnWLn1DvN56a5dTiPPM9t4Dhs7Aq2gNSQVWbA37GzdcDe36QufbdrY8ZhpCvd7l",
+     "type": "post",
+     "title": "CHẤT LIỆU KHÁC NHAU — CHĂM SAO CHO ĐÚNG?",
+     "title_zh": "不同面料，该如何正确护理？",
+     "views": 867,
+     "reactions": 857,
+     "comments": 4,
+     "shares": 6,
+     "days": 4
+    },
+    {
+     "source": "facebook",
+     "id": "1868726660947912",
+     "url": "https://www.facebook.com/reel/1868726660947912/",
+     "type": "reel",
+     "title": "MÓN NÀO VỊ NẤY, NHỜ NGĂN ĐÔNG CHIA HAI",
+     "title_zh": "双区冷冻室，各保原味",
+     "views": 27,
+     "reactions": 25,
+     "comments": 2,
+     "shares": 0,
+     "days": 4
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid026twMzpyLST5gw3LgQ1YwAxQaauhmdAjFfUUBj3kW6tmechhvoSdukwNnfoCBHf6Jl",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid026twMzpyLST5gw3LgQ1YwAxQaauhmdAjFfUUBj3kW6tmechhvoSdukwNnfoCBHf6Jl",
+     "type": "post",
+     "title": "CHIA SẺ Ý KIẾN CỦA BẠN VỀ ỨNG DỤNG HAISMART",
+     "title_zh": "分享你对 HAISMART 应用的意见",
+     "views": 4,
+     "reactions": 3,
+     "comments": 0,
+     "shares": 1,
+     "days": 5
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02Cus64MMGakVQdqNEuDSs7k9evSpnEf2fe1VkqGzGUeNbpitQZsEe9mHcH5aoDAbel",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02Cus64MMGakVQdqNEuDSs7k9evSpnEf2fe1VkqGzGUeNbpitQZsEe9mHcH5aoDAbel",
+     "type": "post",
+     "title": "CHĂM ĐỒ CHUẨN MỰC — TÔ ĐIỂM KHÔNG GIAN: tháp giặt sấy AQUA Color AI",
+     "title_zh": "精致护衣，点缀空间——AQUA Color AI 洗烘塔",
+     "views": 877,
+     "reactions": 862,
+     "comments": 7,
+     "shares": 8,
+     "days": 5
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02FxJBeKVTUWFvyVh62J48wn8hi1NWDTFRaGu2CWwx4wcBayuoPfPJUgLoEkUeDqCl",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02FxJBeKVTUWFvyVh62J48wn8hi1NWDTFRaGu2CWwx4wcBayuoPfPJUgLoEkUeDqCl",
+     "type": "post",
+     "title": "LÀM ĐÁ TỰ ĐỘNG SUỐT 4 NGÀY, CHỈ 1 LẦN CHÂM NƯỚC",
+     "title_zh": "加一次水，自动制冰 4 天",
+     "views": 1330,
+     "reactions": 1300,
+     "comments": 9,
+     "shares": 21,
+     "days": 6
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02MPkEmw367mqdTTUf95BRTcMUJMkDQDJPpaWnmDXCkqWkjjuxMpdBiCqxaZ3xqTiKl",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02MPkEmw367mqdTTUf95BRTcMUJMkDQDJPpaWnmDXCkqWkjjuxMpdBiCqxaZ3xqTiKl",
+     "type": "post",
+     "title": "NGỒI SOFA, ĐI XA QUA TỪNG KHUNG HÌNH — TV AQUA QLED 4K",
+     "title_zh": "坐在沙发上，随画面远行——AQUA QLED 4K 电视",
+     "views": 5,
+     "reactions": 4,
+     "comments": 0,
+     "shares": 1,
+     "days": 8
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02Dic7u6NovT4C8GDgLhDWhZ2uwNbF6kidwizXnkM4dPpSrNwZtWPKy5oqBHFVDubMl",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02Dic7u6NovT4C8GDgLhDWhZ2uwNbF6kidwizXnkM4dPpSrNwZtWPKy5oqBHFVDubMl",
+     "type": "post",
+     "title": "MÁT LÀNH MỖI NGÀY, AN TÂM DÀI LÂU — điều hòa AI Clean Cool",
+     "title_zh": "每天清凉，长久安心——AI Clean Cool 空调",
+     "views": 9,
+     "reactions": 6,
+     "comments": 0,
+     "shares": 3,
+     "days": 9
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0qjuVoZ7MzZ8umZyFGCy3GHCECP2BBg6hSFitJi6WqF37PJxSHf7WH1oLNugepZZ7l",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid0qjuVoZ7MzZ8umZyFGCy3GHCECP2BBg6hSFitJi6WqF37PJxSHf7WH1oLNugepZZ7l",
+     "type": "post",
+     "title": "TẠM DỪNG HOTLINE BẢO TRÌ – NÂNG CẤP TRẢI NGHIỆM PHỤC VỤ",
+     "title_zh": "热线暂停维护——升级服务体验",
+     "views": 8,
+     "reactions": 7,
+     "comments": 0,
+     "shares": 1,
+     "days": 10
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02n8f7SnVuy3oWyD9aif8z3LnXs4BMSribZh6mjedyKHnEME1pyeLbqGVDtLCj4efel",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02n8f7SnVuy3oWyD9aif8z3LnXs4BMSribZh6mjedyKHnEME1pyeLbqGVDtLCj4efel",
+     "type": "post",
+     "title": "CHÍNH THỨC RA MẮT THÁP GIẶT SẤY AQUA COLOR AI: Chăm sóc tinh gọn — Sống trọn phong cách",
+     "title_zh": "AQUA Color AI 洗烘塔正式发布：护理精简，尽享格调",
+     "views": 10885,
+     "reactions": 10800,
+     "comments": 36,
+     "shares": 49,
+     "days": 11
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02m6Ne8utKWLwXrd8Z3qHo61g1PAULzHKyHyxTVcUhyeHoJEZruYzJxcGUNVatMz84l",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid02m6Ne8utKWLwXrd8Z3qHo61g1PAULzHKyHyxTVcUhyeHoJEZruYzJxcGUNVatMz84l",
+     "type": "post",
+     "title": "LỌC SẠCH HIỆU QUẢ - GỌN VỪA KHÔNG GIAN (máy lọc không khí)",
+     "title_zh": "高效净化，小巧适配空间（空气净化器）",
+     "views": 9,
+     "reactions": 6,
+     "comments": 2,
+     "shares": 1,
+     "days": 11
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0aBB7YJUJ6FhSEXjxJUcwvHkEW1ZGNiEESFpZ2V2AyjCYKxzf9rn1jzy4NxADjaQ7l",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid0aBB7YJUJ6FhSEXjxJUcwvHkEW1ZGNiEESFpZ2V2AyjCYKxzf9rn1jzy4NxADjaQ7l",
+     "type": "post",
+     "title": "LÒNG BÌNH CÓ “ÁO GIÁP”, TẮM ẤM THÊM AN TÂM — men Titanium máy nước nóng",
+     "title_zh": "内胆有「铠甲」，洗浴更安心——热水器钛金搪瓷",
+     "views": 1755,
+     "reactions": 1700,
+     "comments": 38,
+     "shares": 17,
+     "days": 11
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0tEPdFgdCE8HCGv4sJ8xNKhWveTmhXs8sZ3rCEsovFFtrEKP6gXqTV5iWMuiZPFSwl",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid0tEPdFgdCE8HCGv4sJ8xNKhWveTmhXs8sZ3rCEsovFFtrEKP6gXqTV5iWMuiZPFSwl",
+     "type": "post",
+     "title": "ĐỘC THÂN KHÔNG CẦN COUPLE, AQUA TẶNG DEAL DOUBLE! (11.11)",
+     "title_zh": "单身不必成双，AQUA 送双倍优惠！（11.11）",
+     "views": 6,
+     "reactions": 5,
+     "comments": 0,
+     "shares": 1,
+     "days": 12
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0eAvFrN246Fcrcz3UcMJ2PHHUWoTSNZon8xVbFRxnucyyXtXabG1yoBdUG61keu5Ql",
+     "url": "https://www.facebook.com/aquavietnam/posts/pfbid0eAvFrN246Fcrcz3UcMJ2PHHUWoTSNZon8xVbFRxnucyyXtXabG1yoBdUG61keu5Ql",
+     "type": "post",
+     "title": "GỠ VƯỚNG KẾT NỐI, TIẾP NỐI TIỆN NGHI CÙNG APP HAISMART",
+     "title_zh": "解决连接难题，HAISMART 应用延续便捷",
+     "views": 3,
+     "reactions": 3,
+     "comments": 0,
+     "shares": 0,
+     "days": 13
     }
    ]
   },
@@ -605,6 +1407,11 @@
      "name": "Hisense Vietnam",
      "name_zh": "海信越南",
      "url": "https://www.youtube.com/@HisenseVietnam/videos"
+    },
+    "facebook": {
+     "name": "Hisense Vietnam",
+     "name_zh": "海信越南",
+     "url": "https://www.facebook.com/Hisense.Vietnam"
     }
    },
    "items": [
@@ -733,6 +1540,201 @@
      "views": 55,
      "days": 300,
      "title_zh": "为什么越来越多人买空调选海信？"
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid034TqXwkxMZDYKStD5EbWzvKA6wU6AjdhZxooY753eFrjNP38TWByRfDKmgQugyJTRl",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid034TqXwkxMZDYKStD5EbWzvKA6wU6AjdhZxooY753eFrjNP38TWByRfDKmgQugyJTRl",
+     "type": "post",
+     "title": "BẠN CÓ THỂ NHẬN RA BAO NHIÊU SẮC XANH TRONG KHUNG HÌNH NÀY?",
+     "title_zh": "你能在这幅画面中分辨出多少种蓝色？",
+     "views": 4,
+     "reactions": 2,
+     "comments": 1,
+     "shares": 1,
+     "days": 7
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02Jh2htLdbkS8nJ2dVjTdNXnoCSfNFGMtpgQDz4Q7MPvc8iArp6qa9133dpPPeVCM6l",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid02Jh2htLdbkS8nJ2dVjTdNXnoCSfNFGMtpgQDz4Q7MPvc8iArp6qa9133dpPPeVCM6l",
+     "type": "post",
+     "title": "CHIÊM NGƯỠNG THẾ GIỚI QUA TỪNG GAM MÀU NGUYÊN BẢN NHẤT! — RGB MiniLED",
+     "title_zh": "以最原本的色彩欣赏世界！——RGB MiniLED",
+     "views": 3,
+     "reactions": 3,
+     "comments": 0,
+     "shares": 0,
+     "days": 7
+    },
+    {
+     "source": "facebook",
+     "id": "29423060387333832",
+     "url": "https://www.facebook.com/reel/29423060387333832/",
+     "type": "reel",
+     "title": "SÁNG HƠN. TIẾT KIỆM HƠN. CAM KẾT TỪ HISENSE #RGBMiniLED",
+     "title_zh": "更亮、更省电——海信 #RGBMiniLED 的承诺",
+     "views": 0,
+     "reactions": 0,
+     "comments": 0,
+     "shares": 0,
+     "days": 7
+    },
+    {
+     "source": "facebook",
+     "id": "1771298280617430",
+     "url": "https://www.facebook.com/reel/1771298280617430/",
+     "type": "reel",
+     "title": "HÌNH ẢNH RỰC RỠ — TIẾT KIỆM ĐIỆN TỐI ƯU (#RGBMiniLED)",
+     "title_zh": "画面绚丽，节能最优（#RGBMiniLED）",
+     "views": 2,
+     "reactions": 1,
+     "comments": 0,
+     "shares": 1,
+     "days": 7
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0314pdvumpwQqKjJMNLnP2xZE4yDGgvwTKjdeHuziJxJaaUzraeY819oibimqR1btyl",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid0314pdvumpwQqKjJMNLnP2xZE4yDGgvwTKjdeHuziJxJaaUzraeY819oibimqR1btyl",
+     "type": "post",
+     "title": "SHOW YÊU THÍCH NGAY TRONG GIAN BẾP CỦA BẠN!",
+     "title_zh": "在厨房里也能看喜爱的节目！",
+     "views": 7,
+     "reactions": 7,
+     "comments": 0,
+     "shares": 0,
+     "days": 14
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0UYREBvJcQnrb3KkWRa3WituKpMzNtRBXvXxkU29Wm6w8fWnRJ9LVrr3TDuyAQFtSl",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid0UYREBvJcQnrb3KkWRa3WituKpMzNtRBXvXxkU29Wm6w8fWnRJ9LVrr3TDuyAQFtSl",
+     "type": "post",
+     "title": "MANG CẢ THẾ GIỚI CHÂN THỰC VỀ CĂN PHÒNG — 4K, Triple Laser",
+     "title_zh": "把真实世界带进你的房间——4K 三色激光",
+     "views": 4,
+     "reactions": 4,
+     "comments": 0,
+     "shares": 0,
+     "days": 14
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid02QX9M3oHqyiFRmkM4XU8koNDb5cPHcFjH8XcFuT7KieiycpJ6EhvQxoeyEiPL6D6al",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid02QX9M3oHqyiFRmkM4XU8koNDb5cPHcFjH8XcFuT7KieiycpJ6EhvQxoeyEiPL6D6al",
+     "type": "post",
+     "title": "TRỌN VẸN CẢM XÚC, KHÔNG GÌ LÀM GIÁN ĐOẠN TRẬN ĐẤU CỦA BẠN!",
+     "title_zh": "情绪拉满，什么都无法打断你的比赛！",
+     "views": 6,
+     "reactions": 6,
+     "comments": 0,
+     "shares": 0,
+     "days": 19
+    },
+    {
+     "source": "facebook",
+     "id": "1128961083048631",
+     "url": "https://www.facebook.com/reel/1128961083048631/",
+     "type": "reel",
+     "title": "RẠP PHIM TẠI GIA CHÍNH THỨC BẮT ĐẦU! Màn hình lên đến 200 inch",
+     "title_zh": "家庭影院正式开场！最大 200 英寸画面",
+     "views": 8,
+     "reactions": 7,
+     "comments": 1,
+     "shares": 0,
+     "days": 19
+    },
+    {
+     "source": "facebook",
+     "id": "1800466454533073",
+     "url": "https://www.facebook.com/reel/1800466454533073/",
+     "type": "reel",
+     "title": "GIẶT SẤY CỰC NHANH — công nghệ AI Super Wash & Dry",
+     "title_zh": "极速洗烘——AI Super Wash & Dry 技术",
+     "views": 13,
+     "reactions": 9,
+     "comments": 0,
+     "shares": 4,
+     "days": 20
+    },
+    {
+     "source": "facebook",
+     "id": "4700811056827733",
+     "url": "https://www.facebook.com/reel/4700811056827733/",
+     "type": "reel",
+     "title": "VI KHUẨN, VI-RÚT TRONG KHÔNG KHÍ? HI-NANO xử lý ngay",
+     "title_zh": "空气中的细菌病毒？HI-NANO 立即处理",
+     "views": 9,
+     "reactions": 8,
+     "comments": 0,
+     "shares": 1,
+     "days": 20
+    },
+    {
+     "source": "facebook",
+     "id": "1622892148666870",
+     "url": "https://www.facebook.com/reel/1622892148666870/",
+     "type": "reel",
+     "title": "NHỮNG ĐIỀU TUYỆT VỜI NHẤT ĐANG ĐẾN — ưu đãi Black Friday tủ lạnh Hisense",
+     "title_zh": "最美好的即将到来——海信冰箱黑五优惠",
+     "views": 6,
+     "reactions": 5,
+     "comments": 0,
+     "shares": 1,
+     "days": 20
+    },
+    {
+     "source": "facebook",
+     "id": "1616504535975282",
+     "url": "https://www.facebook.com/reel/1616504535975282/",
+     "type": "reel",
+     "title": "SẴN SÀNG BÙNG NỔ CÙNG THẾ GIỚI MÀU SẮC? — ưu đãi Black Friday",
+     "title_zh": "准备好与色彩世界一起燃爆了吗？——黑五优惠",
+     "views": 21,
+     "reactions": 18,
+     "comments": 1,
+     "shares": 2,
+     "days": 21
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid0q58rucBNRUHhXY9imthad77XKg4wc5MCSfkUGH9cFxQvzVGxdo1fNLvi6ZTRQ2W1l",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid0q58rucBNRUHhXY9imthad77XKg4wc5MCSfkUGH9cFxQvzVGxdo1fNLvi6ZTRQ2W1l",
+     "type": "post",
+     "title": "HALLOWEEN 31.10.2026 – NÂNG CẤP KHÔNG GIAN SỐNG CÙNG HISENSE",
+     "title_zh": "万圣节 2026.10.31——与海信一起升级生活空间",
+     "views": 17,
+     "reactions": 14,
+     "comments": 0,
+     "shares": 3,
+     "days": 23
+    },
+    {
+     "source": "facebook",
+     "id": "1612472459715197",
+     "url": "https://www.facebook.com/reel/1612472459715197/",
+     "type": "reel",
+     "title": "Căn hầm trú ẩn €8.000 ấm cúng như nhà cùng Hisense",
+     "title_zh": "价值 8,000 欧元的避难所也能像家一样温馨——海信",
+     "views": 4,
+     "reactions": 3,
+     "comments": 1,
+     "shares": 0,
+     "days": 33
+    },
+    {
+     "source": "facebook",
+     "id": "pfbid03SKXFkRWTSSqoAWGuTEGP36Kn3zMSDZhcHPTPRLqUuAiYuERBfW18Qa7HmAHQEe2l",
+     "url": "https://www.facebook.com/Hisense.Vietnam/posts/pfbid03SKXFkRWTSSqoAWGuTEGP36Kn3zMSDZhcHPTPRLqUuAiYuERBfW18Qa7HmAHQEe2l",
+     "type": "post",
+     "title": "BƯỚC VÀO TƯƠNG LAI CỦA MÀU SẮC TẠI OUTERNET LONDON",
+     "title_zh": "在伦敦 Outernet 走进色彩的未来",
+     "views": 12,
+     "reactions": 11,
+     "comments": 0,
+     "shares": 1,
+     "days": 33
     }
    ]
   }

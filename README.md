@@ -47,7 +47,6 @@ Thêm ngôn ngữ mới: thêm một khối vào `T` trong `assets/app.js` và m
   "source": "facebook", "type": "post",
   "id": "pfbid02abc...", "url": "https://www.facebook.com/SamsungVietnam/posts/pfbid02abc...",
   "title": "Nội dung bài viết, cắt ngắn", "title_zh": "帖子内容，节选",
-  "image": "assets/shots/2026-11-23/samsung-01.jpg",
   "views": 1234, "reactions": 1100, "comments": 80, "shares": 54, "days": 2
 }
 ```
@@ -55,8 +54,8 @@ Thêm ngôn ngữ mới: thêm một khối vào `T` trong `assets/app.js` và m
 - `views` với Facebook là **tổng tương tác** (cảm xúc + bình luận + chia sẻ),
   vì Facebook không công khai lượt xem bài đăng. Trang ghi rõ đơn vị “tương tác”.
 - `type`: `post`, `video` hoặc `reel` (video/reel có nút ▶).
-- `image` là ảnh bài thu nhỏ, lưu trong `assets/shots/<tuần>/` (link ảnh gốc của
-  Facebook hết hạn sau vài ngày).
+- Bài Facebook không có ảnh (link ảnh Facebook hết hạn sau khoảng 4 ngày), trang
+  hiện ô màu của hãng thay ảnh. Nếu có `image` (đường dẫn trong repo) thì trang dùng.
 - Fanpage từng hãng khai báo ở `brands[].channels.facebook`.
 
 Cách lấy dữ liệu: `collect/EXTRACT.md` (phần Facebook), `collect/fb_grab.js`,

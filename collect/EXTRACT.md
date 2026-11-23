@@ -72,7 +72,7 @@ Mỗi fanpage đều lấy từ link Facebook trên website chính thức tại 
 |---|---|
 | Samsung | https://www.facebook.com/SamsungVietnam |
 | Toshiba | https://www.facebook.com/ToshibaLifestyleVietnam |
-| LG | https://www.facebook.com/lge.vietnam |
+| LG | https://www.facebook.com/LGEVietnam |
 | AQUA | https://www.facebook.com/aquavietnam |
 | Hisense | https://www.facebook.com/Hisense.Vietnam |
 
@@ -80,16 +80,17 @@ Mỗi fanpage đều lấy từ link Facebook trên website chính thức tại 
 
 1. Mở fanpage, chờ 5 giây.
 2. Chạy toàn bộ nội dung `collect/fb_grab.js`, nối thêm dòng
-   `JSON.stringify(await grabFB(12))` ở cuối. Kết quả gồm các bài mới nhất, kèm
-   cảm xúc, bình luận, chia sẻ, tổng tương tác (`interactions`), số ngày (`days`)
-   và link ảnh (`img`).
-3. Nếu mảng `posts` rỗng hoặc ít hơn 3 bài: chờ thêm 5 giây, chạy lại một lần.
-   Vẫn rỗng thì ghi nhận hãng đó không lấy được, chuyển sang hãng sau.
-4. Ảnh: vẫn trên trang đó, chạy lại phần `shrink` trong `fb_grab.js`, rồi
-   lấy base64 cho tối đa 6 bài mới nhất có `img`:
-   `JSON.stringify(Object.fromEntries(await Promise.all(P.filter(p=>p.img).slice(0,6).map(async p=>[p.id, await shrink(p.img)]))))`
-   (`P` là mảng `posts` vừa lấy; ảnh link Facebook hết hạn sau vài ngày nên
-   phải lưu vào repo).
+   `window.__fb = await grabFB(15); JSON.stringify({lo: __fb.loggedOut, p: __fb.posts.map(p => [p.id, p.url.replace('https://www.facebook.com',''), p.type, p.text.slice(0,170), p.reactions, p.comments, p.shares, p.days])})`
+   ở cuối. Script tự cuộn trang, giả lập rê chuột vào mốc thời gian của từng bài để
+   đọc ngày đăng, và đọc cảm xúc / bình luận / chia sẻ. Mất khoảng 1 phút mỗi trang.
+3. `lo: true` nghĩa là Facebook đã đăng xuất → dừng phần Facebook, báo người dùng
+   đăng nhập lại. Nếu `p` rỗng hoặc dưới 3 bài: chờ 5 giây, chạy lại một lần;
+   vẫn rỗng thì ghi nhận hãng đó không lấy được.
+4. Ảnh: **không lấy**. Link ảnh Facebook hết hạn sau khoảng 4 ngày và máy chạy code
+   không tải được ảnh từ Facebook, nên bài Facebook hiện ô màu thay ảnh.
+
+Tiêu đề hiển thị: rút gọn đoạn chữ của bài thành một câu ngắn (dưới ~100 ký tự,
+giữ tên sản phẩm / chiến dịch), dịch câu đó sang tiếng Trung giản thể cho `text_zh`.
 
 Bài ghim (pinned) có thể cũ: vẫn giữ, vì `days` cho biết tuổi thật của bài.
 Bài livestream đang diễn ra thì lấy số tại thời điểm đó.
@@ -97,15 +98,15 @@ Bài livestream đang diễn ra thì lấy số tại thời điểm đó.
 ## Ghi vào file tuần
 
 Gom kết quả 5 hãng thành một file tạm `/tmp/fb_raw.json` theo mẫu trong đầu
-`collect/fb_merge.py` (thêm `text_zh`: dịch đoạn chữ của bài sang tiếng Trung
-giản thể), rồi chạy:
+`collect/fb_merge.py` (`url` của bài = `https://www.facebook.com` + đường dẫn,
+`interactions` = cảm xúc + bình luận + chia sẻ, không cần `thumbs`), rồi chạy:
 
 ```
 python3 collect/fb_merge.py data/YYYY-MM-DD.json /tmp/fb_raw.json
 ```
 
-Script lưu ảnh vào `assets/shots/YYYY-MM-DD/`, ghi bài vào `brands[].items` với
-`"source": "facebook"`, `views` = tổng tương tác. Chạy lại không bị trùng.
+Script ghi bài vào `brands[].items` với `"source": "facebook"`,
+`views` = tổng tương tác. Chạy lại không bị trùng.
 Không commit file tạm.
 
 ## Nhận định Facebook

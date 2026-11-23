@@ -29,7 +29,6 @@ data = json.load(open(week_path, encoding='utf-8'))
 raw = json.load(open(raw_path, encoding='utf-8'))
 
 shot_dir = os.path.join('assets', 'shots', week)
-os.makedirs(shot_dir, exist_ok=True)
 
 by_brand = {b['brand']: b for b in data['brands']}
 total = 0
@@ -59,10 +58,14 @@ for brand, fb in raw.items():
         }
         if not item['title_zh']: item.pop('title_zh')
         if p['id'] in thumbs and thumbs[p['id']]:
+            os.makedirs(shot_dir, exist_ok=True)
             fn = f'{slug}-{n:02d}.jpg'
             with open(os.path.join(shot_dir, fn), 'wb') as f:
                 f.write(base64.b64decode(thumbs[p['id']]))
             item['image'] = f'assets/shots/{week}/{fn}'
+        elif p.get('img'):
+            # khong luu duoc anh: dung link anh Facebook (het han sau vai ngay, trang tu hien o mau)
+            item['image'] = p['img']
         b['items'].append(item); total += 1
 
 srcs = data.get('sources')
