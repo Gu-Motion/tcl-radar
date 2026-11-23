@@ -230,7 +230,7 @@ function openLB(brand, id) {
 }
 
 async function loadWeek(w) {
-  DATA = await (await fetch(`data/${w}.json`)).json();
+  DATA = await (await fetch(`data/${w}.json`, { cache: 'no-cache' })).json();
   week = w;
   render();
 }
@@ -265,7 +265,7 @@ function setLang(l) {
   document.addEventListener('keydown', ev => { if (ev.key === 'Escape') $('#lb').hidden = true; });
 
   setLang(lang);
-  const idx = await (await fetch('data/index.json')).json();
+  const idx = await (await fetch('data/index.json', { cache: 'no-cache' })).json();
   const weeks = idx.weeks.slice().sort().reverse();
   $('#weekSel').innerHTML = weeks.map(w => `<option value="${w}">${w}</option>`).join('');
   $('#weekSel').style.display = weeks.length > 1 ? '' : 'none';
