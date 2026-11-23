@@ -29,7 +29,7 @@ const T = {
           d < 7 ? `${d} ngày trước` : d < 30 ? `${Math.round(d / 7)} tuần trước` :
           d < 365 ? `${Math.round(d / 30)} tháng trước` : `${Math.round(d / 365)} năm trước`,
     f1: '<b>Cách đọc:</b> YouTube tính theo lượt xem; Facebook tính theo tổng tương tác (cảm xúc + bình luận + chia sẻ), vì Facebook không công khai lượt xem bài đăng. Hai con số này không so trực tiếp với nhau. "Dấu hiệu đẩy media" bật khi một bài cao gấp từ 10 lần trở lên so với trung vị của chính kênh đó trên cùng nền tảng (tối thiểu 10.000 lượt xem với YouTube, 1.000 tương tác với Facebook). Đây là suy luận, không phải số liệu chi tiêu thật.',
-    f2: '<b>Giới hạn:</b> Số liệu là con số tại thời điểm lấy dữ liệu. Không bao gồm quảng cáo chỉ chạy trong luồng tin (dark post) mà không đăng lên trang.',
+    f2: '<b>Giới hạn:</b> Số liệu là con số tại thời điểm lấy dữ liệu. Không bao gồm quảng cáo chỉ chạy trong luồng tin (dark post) mà không đăng lên trang. Facebook chỉ lấy 15 bài mới nhất mỗi trang, nên với hãng đăng dày, cột 30 ngày có thể thấp hơn thực tế.',
     f3: '<b>Cập nhật:</b> tự động vào 9:00 sáng thứ Hai hằng tuần.'
   },
   zh: {
@@ -49,7 +49,7 @@ const T = {
           d < 7 ? `${d} 天前` : d < 30 ? `${Math.round(d / 7)} 周前` :
           d < 365 ? `${Math.round(d / 30)} 个月前` : `${Math.round(d / 365)} 年前`,
     f1: '<b>读法：</b>YouTube 按播放量计；Facebook 按总互动（表情 + 评论 + 分享）计，因为 Facebook 不公开帖子播放量。两者不可直接比较。当某条内容达到同一平台上该频道中位数的 10 倍或以上时（YouTube 至少 1 万次播放，Facebook 至少 1,000 次互动），标记为「媒体投放迹象」。这是推断，并非真实投放数据。',
-    f2: '<b>局限：</b>数据为抓取时点的数值，不包含仅在信息流中投放、未发布到主页的广告（暗帖）。',
+    f2: '<b>局限：</b>数据为抓取时点的数值，不包含仅在信息流中投放、未发布到主页的广告（暗帖）。Facebook 每页仅抓取最新 15 条，发帖频繁的品牌其 30 天数据可能偏低。',
     f3: '<b>更新：</b>每周一上午 9:00 自动更新。'
   }
 };
