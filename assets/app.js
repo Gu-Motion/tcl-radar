@@ -1,11 +1,14 @@
 /* Radar doi thu — renderer song ngu (vi / zh)
    Du lieu: data/index.json -> danh sach tuan; data/<tuan>.json -> noi dung tuan.
-   Them nguon moi (vi du facebook): chi can them item co "source":"facebook"
-   vao brands[].items va khai bao trong SOURCES ben duoi. Khong phai sua gi khac. */
+   Moi item co "source" (youtube | facebook). Khai bao nguon trong SOURCES ben duoi. */
 
+// metric: nhan cua con so "views" o moi nguon. minPaid: nguong toi thieu de gan "day media".
+// YouTube: views = luot xem. Facebook: views = tong tuong tac (cam xuc + binh luan + chia se).
 const SOURCES = {
-  youtube:  { vi: 'YouTube',  zh: 'YouTube' },
-  facebook: { vi: 'Facebook', zh: 'Facebook' }
+  youtube:  { vi: 'YouTube',  zh: 'YouTube',  minPaid: 10000,
+              metric: { vi: 'lượt xem', zh: '次播放' }, mshort: { vi: 'xem', zh: '播放' } },
+  facebook: { vi: 'Facebook', zh: 'Facebook', minPaid: 1000,
+              metric: { vi: 'tương tác', zh: '次互动' }, mshort: { vi: 'tương tác', zh: '互动' } }
 };
 
 const T = {
@@ -15,37 +18,39 @@ const T = {
     latest: 'Nội dung mới nhất từng hãng', all: 'Tất cả',
     th_brand: 'Thương hiệu', th_7: '7 ngày', th_30: '30 ngày',
     th_fresh: 'Ngày từ bài mới', th_median: 'Trung vị', th_max: 'Cao nhất',
+    fbpage: 'Fanpage',
     th_paid: 'Dấu hiệu đẩy media',
     yes: 'có', no: 'không thấy',
     s7: 'bài trong 7 ngày', s30: 'bài trong 30 ngày',
-    sfresh: 'ngày từ bài mới nhất', smed: 'lượt xem trung vị',
+    sfresh: 'ngày từ bài mới nhất', smed: 'trung vị',
     boost: 'có đẩy media', views: 'lượt xem', empty: 'Không có nội dung ở nguồn này.',
     sub: w => `Tuần ${w} · Samsung, Toshiba, LG, AQUA, Hisense`,
     ago: d => d === 0 ? 'hôm nay' : d === 1 ? 'hôm qua' :
           d < 7 ? `${d} ngày trước` : d < 30 ? `${Math.round(d / 7)} tuần trước` :
           d < 365 ? `${Math.round(d / 30)} tháng trước` : `${Math.round(d / 365)} năm trước`,
-    f1: '<b>Cách đọc:</b> "Dấu hiệu đẩy media" bật khi một video có lượt xem cao gấp từ 10 lần trở lên so với mức trung vị của chính kênh đó. Lượt xem tự nhiên hiếm khi chênh tới mức này, nên đó là chỉ báo gián tiếp cho việc có ngân sách quảng cáo phía sau. Đây là suy luận, không phải số liệu chi tiêu thật.',
-    f2: '<b>Giới hạn:</b> Số liệu là con số tại thời điểm lấy dữ liệu. Không bao gồm quảng cáo chỉ chạy trong luồng tin mà không đăng lên kênh.',
-    f3: '<b>Cập nhật:</b> tự động vào 9:15 sáng thứ Hai hằng tuần.'
+    f1: '<b>Cách đọc:</b> YouTube tính theo lượt xem; Facebook tính theo tổng tương tác (cảm xúc + bình luận + chia sẻ), vì Facebook không công khai lượt xem bài đăng. Hai con số này không so trực tiếp với nhau. "Dấu hiệu đẩy media" bật khi một bài cao gấp từ 10 lần trở lên so với trung vị của chính kênh đó trên cùng nền tảng (tối thiểu 10.000 lượt xem với YouTube, 1.000 tương tác với Facebook). Đây là suy luận, không phải số liệu chi tiêu thật.',
+    f2: '<b>Giới hạn:</b> Số liệu là con số tại thời điểm lấy dữ liệu. Không bao gồm quảng cáo chỉ chạy trong luồng tin (dark post) mà không đăng lên trang.',
+    f3: '<b>Cập nhật:</b> tự động vào 9:00 sáng thứ Hai hằng tuần.'
   },
   zh: {
     title: '竞品雷达',
     notes: '本周观察', compare: '快速对比',
     latest: '各品牌最新内容', all: '全部',
     th_brand: '品牌', th_7: '7 天', th_30: '30 天',
-    th_fresh: '距最新内容', th_median: '中位播放', th_max: '最高播放',
+    th_fresh: '距最新内容', th_median: '中位数', th_max: '最高',
+    fbpage: '粉丝页',
     th_paid: '媒体投放迹象',
     yes: '有', no: '未发现',
     s7: '条 / 7 天', s30: '条 / 30 天',
-    sfresh: '天前最新一条', smed: '播放中位数',
+    sfresh: '天前最新一条', smed: '中位数',
     boost: '疑似投放', views: '次播放', empty: '该来源暂无内容。',
     sub: w => `${w} 当周 · 三星、东芝、LG、AQUA、海信`,
     ago: d => d === 0 ? '今天' : d === 1 ? '昨天' :
           d < 7 ? `${d} 天前` : d < 30 ? `${Math.round(d / 7)} 周前` :
           d < 365 ? `${Math.round(d / 30)} 个月前` : `${Math.round(d / 365)} 年前`,
-    f1: '<b>读法：</b>当某条视频的播放量达到该频道中位数的 10 倍或以上时，标记为「媒体投放迹象」。自然播放极少出现这种差距，因此可作为背后存在广告预算的间接信号。这是推断，并非真实投放数据。',
-    f2: '<b>局限：</b>数据为抓取时点的数值，不包含仅在信息流中投放、未发布到频道的广告。',
-    f3: '<b>更新：</b>每周一上午 9:15 自动更新。'
+    f1: '<b>读法：</b>YouTube 按播放量计；Facebook 按总互动（表情 + 评论 + 分享）计，因为 Facebook 不公开帖子播放量。两者不可直接比较。当某条内容达到同一平台上该频道中位数的 10 倍或以上时（YouTube 至少 1 万次播放，Facebook 至少 1,000 次互动），标记为「媒体投放迹象」。这是推断，并非真实投放数据。',
+    f2: '<b>局限：</b>数据为抓取时点的数值，不包含仅在信息流中投放、未发布到主页的广告（暗帖）。',
+    f3: '<b>更新：</b>每周一上午 9:00 自动更新。'
   }
 };
 
@@ -76,16 +81,30 @@ function linkOf(it) {
 }
 
 function statsOf(items) {
-  const vals = items.map(i => i.views || 0);
-  const med = median(vals);
-  const paid = new Set(items.filter(i => med && (i.views || 0) >= Math.max(10 * med, 10000))
-                            .map(i => i.id));
+  // Moi nguon tinh rieng: luot xem YouTube va tuong tac Facebook khong cung thuoc do.
+  const bySrc = {};
+  items.forEach(i => { (bySrc[i.source] = bySrc[i.source] || []).push(i); });
+  const per = {}, paid = new Set();
+  Object.keys(SOURCES).filter(k => bySrc[k]).forEach(k => {
+    const arr = bySrc[k], vals = arr.map(i => i.views || 0), med = median(vals);
+    arr.forEach(i => { if (med && (i.views || 0) >= Math.max(10 * med, SOURCES[k].minPaid))
+                         paid.add(k + ':' + i.id); });
+    per[k] = { med, max: Math.max(...vals) };
+  });
   return {
     n7: items.filter(i => i.days <= 7).length,
     n30: items.filter(i => i.days <= 30).length,
     fresh: items.length ? Math.min(...items.map(i => i.days)) : null,
-    med, max: vals.length ? Math.max(...vals) : 0, paid
+    per, paid
   };
+}
+
+// Hien trung vi / cao nhat theo tung nguon, kem don vi (xem / tuong tac).
+function perCell(st, key) {
+  const ks = Object.keys(st.per);
+  if (!ks.length) return '—';
+  return ks.map(k => `<span class="pm">${fmt(st.per[k][key])}` +
+    `<small> ${esc(SOURCES[k].mshort[lang])}</small></span>`).join('<br>');
 }
 
 function visible(b) {
@@ -121,38 +140,43 @@ function render() {
   $('#tbl tbody').innerHTML = rows.map(({ b, st }) => `<tr>
     <td><span class="dot" style="--c:${COLOR[b.brand] || '#888'}"></span>${esc(b.brand)}</td>
     <td class="num">${st.n7}</td><td class="num">${st.n30}</td>
-    <td class="num">${st.fresh ?? '—'}</td><td class="num">${fmt(st.med)}</td>
-    <td class="num">${fmt(st.max)}</td>
+    <td class="num">${st.fresh ?? '—'}</td><td class="num">${perCell(st, 'med')}</td>
+    <td class="num">${perCell(st, 'max')}</td>
     <td>${st.paid.size ? `<span class="tag">${t.yes}</span>`
                        : `<span class="tag off">${t.no}</span>`}</td></tr>`).join('');
 
   // khoi tung hang
   $('#brands').innerHTML = rows.map(({ b, items, st }) => {
     const c = COLOR[b.brand] || '#888';
-    const ch = b.channels[src === 'all' ? 'youtube' : src] || b.channels.youtube || {};
-    const chName = (lang === 'zh' && ch.name_zh) ? ch.name_zh : (ch.name || '');
-    const tiles = items.slice().sort((x, y) => x.days - y.days).slice(0, 6).map(it => {
+    const chs = Object.keys(SOURCES).filter(k => b.channels[k] && (src === 'all' || src === k))
+      .map(k => { const ch = b.channels[k];
+        const nm = (lang === 'zh' && ch.name_zh) ? ch.name_zh : (ch.name || SOURCES[k][lang]);
+        return `<a class="src" href="${esc(ch.url)}" target="_blank" rel="noopener">${esc(SOURCES[k][lang])}: ${esc(nm)} ↗</a>`; })
+      .join('');
+    const tiles = items.slice().sort((x, y) => x.days - y.days).slice(0, src === 'all' ? 8 : 6).map(it => {
+      const S = SOURCES[it.source] || SOURCES.youtube;
+      const isVideo = it.source === 'youtube' || it.type === 'video' || it.type === 'reel';
       const th = thumbOf(it);
       return `<a class="v" href="${esc(linkOf(it))}" target="_blank" rel="noopener">
         <div class="thumb${th ? '' : ' noimg'}" style="--c:${c}">
           ${th ? `<img loading="lazy" src="${esc(th)}" alt=""
                onerror="this.closest('.thumb').classList.add('noimg')">` : ''}
-          <span class="play">▶</span>
+          ${isVideo ? '<span class="play">▶</span>' : ''}
           ${it.len ? `<span class="len">${esc(it.len)}</span>` : ''}
           ${src === 'all' ? `<span class="badge">${esc(SOURCES[it.source]?.[lang] || it.source)}</span>` : ''}
-          ${st.paid.has(it.id) ? `<span class="boost">${t.boost}</span>` : ''}
+          ${st.paid.has(it.source + ':' + it.id) ? `<span class="boost">${t.boost}</span>` : ''}
         </div>
         <div class="vt">${esc(titleOf(it))}</div>
-        <div class="vm">${t.ago(it.days)} · ${fmt(it.views || 0)} ${t.views}</div></a>`;
+        <div class="vm">${t.ago(it.days)} · ${fmt(it.views || 0)} ${esc(S.metric[lang])}</div></a>`;
     }).join('');
     return `<section class="brand" style="--c:${c}">
       <header><h2><span class="dot" style="--c:${c}"></span>${esc(b.brand)}</h2>
-      ${ch.url ? `<a class="src" href="${esc(ch.url)}" target="_blank" rel="noopener">${esc(chName)} ↗</a>` : ''}</header>
+      <div class="srcs">${chs}</div></header>
       <div class="stats">
         <div><b>${st.n7}</b><span>${t.s7}</span></div>
         <div><b>${st.n30}</b><span>${t.s30}</span></div>
         <div><b>${st.fresh ?? '—'}</b><span>${t.sfresh}</span></div>
-        <div><b>${fmt(st.med)}</b><span>${t.smed}</span></div>
+        <div><b>${perCell(st, 'med')}</b><span>${t.smed}</span></div>
       </div>
       ${items.length ? `<div class="grid">${tiles}</div>`
                      : `<div class="empty">${t.empty}</div>`}</section>`;

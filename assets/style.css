@@ -89,3 +89,10 @@ footer b{color:#9fb0c8}
   h1{font-size:23px}
   .top{flex-direction:column}
 }
+
+/* Facebook: nhieu link nguon + con so theo tung nguon */
+.brand header .srcs { display: flex; flex-wrap: wrap; gap: 4px 14px; justify-content: flex-end; }
+.pm { white-space: nowrap; }
+.pm small { opacity: .6; font-weight: 400; font-size: .78em; }
+.stats .pm { display: inline-block; line-height: 1.15; }
+.stats b br + .pm, .stats b .pm + br + .pm { font-size: .8em; }

@@ -55,3 +55,63 @@ hãng nào đổi nhịp đăng rõ rệt; video mới có dấu hiệu đẩy m
 hashtag mới lặp lại (nhất là nội dung Tết); hãng nào vừa khởi động chiến dịch.
 
 Nêu con số cụ thể. Nếu tuần đó không có gì đáng kể thì nói thẳng, đừng bịa.
+
+---
+
+# Facebook
+
+Dùng **cùng trình duyệt tích hợp**, và trình duyệt phải **đang đăng nhập Facebook**.
+Nếu chưa đăng nhập, Facebook chỉ cho xem 1–3 bài rồi chặn, dữ liệu sẽ thiếu.
+Gặp trang đăng nhập hay checkpoint thì dừng phần Facebook và báo lại, đừng tự đăng nhập.
+
+## Fanpage theo dõi
+
+Mỗi fanpage đều lấy từ link Facebook trên website chính thức tại Việt Nam của hãng.
+
+| Hãng | Fanpage |
+|---|---|
+| Samsung | https://www.facebook.com/SamsungVietnam |
+| Toshiba | https://www.facebook.com/ToshibaLifestyleVietnam |
+| LG | https://www.facebook.com/lge.vietnam |
+| AQUA | https://www.facebook.com/aquavietnam |
+| Hisense | https://www.facebook.com/Hisense.Vietnam |
+
+## Cách làm với từng fanpage
+
+1. Mở fanpage, chờ 5 giây.
+2. Chạy toàn bộ nội dung `collect/fb_grab.js`, nối thêm dòng
+   `JSON.stringify(await grabFB(12))` ở cuối. Kết quả gồm các bài mới nhất, kèm
+   cảm xúc, bình luận, chia sẻ, tổng tương tác (`interactions`), số ngày (`days`)
+   và link ảnh (`img`).
+3. Nếu mảng `posts` rỗng hoặc ít hơn 3 bài: chờ thêm 5 giây, chạy lại một lần.
+   Vẫn rỗng thì ghi nhận hãng đó không lấy được, chuyển sang hãng sau.
+4. Ảnh: vẫn trên trang đó, chạy lại phần `shrink` trong `fb_grab.js`, rồi
+   lấy base64 cho tối đa 6 bài mới nhất có `img`:
+   `JSON.stringify(Object.fromEntries(await Promise.all(P.filter(p=>p.img).slice(0,6).map(async p=>[p.id, await shrink(p.img)]))))`
+   (`P` là mảng `posts` vừa lấy; ảnh link Facebook hết hạn sau vài ngày nên
+   phải lưu vào repo).
+
+Bài ghim (pinned) có thể cũ: vẫn giữ, vì `days` cho biết tuổi thật của bài.
+Bài livestream đang diễn ra thì lấy số tại thời điểm đó.
+
+## Ghi vào file tuần
+
+Gom kết quả 5 hãng thành một file tạm `/tmp/fb_raw.json` theo mẫu trong đầu
+`collect/fb_merge.py` (thêm `text_zh`: dịch đoạn chữ của bài sang tiếng Trung
+giản thể), rồi chạy:
+
+```
+python3 collect/fb_merge.py data/YYYY-MM-DD.json /tmp/fb_raw.json
+```
+
+Script lưu ảnh vào `assets/shots/YYYY-MM-DD/`, ghi bài vào `brands[].items` với
+`"source": "facebook"`, `views` = tổng tương tác. Chạy lại không bị trùng.
+Không commit file tạm.
+
+## Nhận định Facebook
+
+Viết chung trong `notes` với YouTube, nêu rõ nền tảng. Gợi ý so sánh:
+số bài/tuần từng hãng; bài nào tương tác vượt hẳn trung vị Facebook của hãng
+(dấu hiệu chạy quảng cáo); chủ đề lặp lại (khuyến mãi, Tết, livestream bán hàng,
+minigame); hãng nào hoạt động mạnh trên Facebook nhưng im ở YouTube hoặc ngược lại.
+Không so lượt xem YouTube với tương tác Facebook như cùng một thước đo.
